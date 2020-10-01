@@ -8,6 +8,7 @@
     <div class="star"></div>
     <div class="star"></div>
      <div class="star"></div>
+     <div class= "moon"></div>
   </div>
 </template>
 
@@ -31,7 +32,7 @@ export default {
     to {background-position:-10000px 5000px;}
 }
 
-.still-stars, .twinkling, .mountain {
+.still-stars, .twinkling, .mountain, .moon{
   position:absolute;
   top:0;
   left:0;
@@ -55,13 +56,22 @@ export default {
 
 .mountain{
     background: transparent url(../assets/mountain3.png) no-repeat bottom;
-    z-index: 2;
+    z-index: 6;
     height: auto;
     width: 100%;
-    filter: hue-rotate(1turn) brightness(0.7);
+    filter: brightness(0.9) sepia(0.1);
     background-position-y: 60%;
     height: 60%;
     top: 40%;
+}
+.moon{
+  background: transparent url(../assets/rsz_moon.png) no-repeat top right;
+    z-index: 5;
+    background-size: 10rem;
+    background-position-y: 30%;
+    background-position-x: 90%;
+    filter: hue-rotate(40deg) sepia(0.2);
+    opacity: 0.9;
 }
 .star {
   position: absolute;
