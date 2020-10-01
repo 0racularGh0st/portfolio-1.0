@@ -18,7 +18,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped>
 
 * {
     margin: 0;
@@ -79,22 +79,20 @@ export default {
   content: '';
   top: calc(50% - 1px);
   right: 0;
-  height: 0.5px;
+  height: 2px;
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #cbcbcb, rgba(0, 0, 255, 0));
   border-radius: 100%;
-  transform: translateX(50%) rotateZ(45deg);
   transform: translateX(50%) rotateZ(-45deg);
   animation: shining 3000ms ease-in-out;
 }
 
 .star::after {
-  transform: translateX(50%) rotateZ(-45deg);
   transform: translateX(50%) rotateZ(45deg);
 }
 
 .star:nth-child(5) {
    z-index: 4;
-   opacity: 0.7;
+   opacity: 0.5;
   top: calc(31%);
   left: calc(86% - 300px);
   animation-delay: 2s;
@@ -107,7 +105,7 @@ export default {
 
 .star:nth-child(6) {
    z-index: 4;
-   opacity: 0.7;
+   opacity: 0.5;
   top: calc(41% - -50px);
   left: calc(50% - 190px);
   animation-delay: 5s;
@@ -120,7 +118,7 @@ export default {
 
 .star:nth-child(7) {
    z-index: 4;
-   opacity: 0.7;
+   opacity: 0.5;
   top: calc(34%);
   left: calc(71%);
   animation-delay: 9s;
@@ -133,7 +131,7 @@ export default {
 
 .star:nth-child(4) {
   z-index: 4;
-  opacity: 0.7;
+  opacity: 0.5;
   top: calc(50% - 50px);
   left: calc(50% - 250px);
   animation-delay: 13s;
@@ -146,7 +144,7 @@ export default {
 
 .star:nth-child(8) {
    z-index: 4;
-   opacity: 0.7;
+   opacity: 0.5;
   top: calc(-5% - -190px);
   left: calc(74% - 200px);
   animation-delay: 17s;
