@@ -53,6 +53,6 @@ export default {
     z-index: 2;
     height: auto;
     width: 100%;
-    filter: hue-rotate(360deg) sepia(0.4) brightness(0.7);
+    filter: hue-rotate(360deg) brightness(0.7);
 }
 </style>
