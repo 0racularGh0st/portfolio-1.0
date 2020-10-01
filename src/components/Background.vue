@@ -49,10 +49,13 @@ export default {
 }
 
 .mountain{
-    background: transparent url(../assets/mountain3.png) no-repeat bottom center;
+    background: transparent url(../assets/mountain3.png) no-repeat bottom;
     z-index: 2;
     height: auto;
     width: 100%;
-    filter: hue-rotate(360deg) brightness(0.7);
+    filter: hue-rotate(1turn) brightness(0.7);
+    background-position-y: 60%;
+    height: 60%;
+    top: 40%;
 }
 </style>
