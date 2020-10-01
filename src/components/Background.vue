@@ -12,12 +12,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  
-}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
@@ -55,11 +49,11 @@ export default {
 }
 
 .mountain{
-    background: transparent url(../assets/mountain3.png) no-repeat bottom;
+    background: transparent url(../assets/mountain4.png) no-repeat bottom;
     z-index: 6;
     height: auto;
     width: 100%;
-    filter: brightness(0.9) sepia(0.1);
+    filter: brightness(0.7);
     background-position-y: 60%;
     height: 60%;
     top: 40%;
@@ -70,7 +64,7 @@ export default {
     background-size: 10rem;
     background-position-y: 30%;
     background-position-x: 90%;
-    filter: hue-rotate(40deg) sepia(0.2);
+    filter: brightness(0.9);
 }
 .star {
   position: absolute;
