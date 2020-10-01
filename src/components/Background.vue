@@ -71,7 +71,6 @@ export default {
     background-position-y: 30%;
     background-position-x: 90%;
     filter: hue-rotate(40deg) sepia(0.2);
-    opacity: 0.9;
 }
 .star {
   position: absolute;
