@@ -1,8 +1,13 @@
 <template>
   <div id="main-background">
-    <div class="stars"></div>
+    <div class="still-stars"></div>
     <div class="twinkling"></div> 
     <div class="mountain"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+     <div class="star"></div>
   </div>
 </template>
 
@@ -26,7 +31,7 @@ export default {
     to {background-position:-10000px 5000px;}
 }
 
-.stars, .twinkling, .mountain {
+.still-stars, .twinkling, .mountain {
   position:absolute;
   top:0;
   left:0;
@@ -37,7 +42,7 @@ export default {
   display:block;
 }
 
-.stars {
+.still-stars {
   background:#000 url(../assets/stars.png) repeat top center;
   z-index:0;
 }
@@ -57,5 +62,127 @@ export default {
     background-position-y: 60%;
     height: 60%;
     top: 40%;
+}
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #cbcbcb, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3000ms ease-in-out, shooting 3000ms ease-in-out ;
+}
+
+.star::before, .star::after {
+  z-index: 4;
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 0.5px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #cbcbcb, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3000ms ease-in-out;
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(5) {
+   z-index: 4;
+  top: calc(31%);
+  left: calc(86% - 300px);
+  animation-delay: 2s;
+}
+.star:nth-child(5)::before, .star:nth-child(1)::after {
+  animation-delay: 2s;
+}
+
+.star:nth-child(6) {
+   z-index: 4;
+  top: calc(41% - -50px);
+  left: calc(50% - 190px);
+  animation-delay: 5s;
+}
+.star:nth-child(6)::before, .star:nth-child(2)::after {
+  animation-delay: 5s;
+}
+
+.star:nth-child(7) {
+   z-index: 4;
+  top: calc(34%);
+  left: calc(71%);
+  animation-delay: 9s;
+  animation-iteration-count: 1;
+}
+.star:nth-child(7)::before, .star:nth-child(3)::after {
+  animation-delay: 9s;
+  animation-iteration-count: 1;
+}
+
+.star:nth-child(4) {
+  z-index: 4;
+  opacity: 0.7;
+  top: calc(50% - 50px);
+  left: calc(50% - 250px);
+  animation-delay: 13s;
+  animation-iteration-count: 1;
+}
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+  animation-delay: 13s;
+  animation-iteration-count: 1;
+}
+
+.star:nth-child(8) {
+   z-index: 4;
+  top: calc(-5% - -190px);
+  left: calc(74% - 200px);
+  animation-delay: 17s;
+  animation-iteration-count: 1;
+}
+.star:nth-child(8)::before, .star:nth-child(5)::after {
+  animation-delay: 17s;
+  animation-iteration-count: 1;
+}
+
+
+
+
+/* Animations */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  
+  30% {
+    width: 80px;
+  }
+  
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0) rotate(-15deg) translateY(0);
+  }
+  100% {
+    transform: translateX(320px) rotate(-15deg) translateY(-65px);
+  }
 }
 </style>
