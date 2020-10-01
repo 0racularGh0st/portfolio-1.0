@@ -83,41 +83,50 @@ export default {
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #cbcbcb, rgba(0, 0, 255, 0));
   border-radius: 100%;
   transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(-45deg);
   animation: shining 3000ms ease-in-out;
 }
 
 .star::after {
   transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(45deg);
 }
 
 .star:nth-child(5) {
    z-index: 4;
+   opacity: 0.7;
   top: calc(31%);
   left: calc(86% - 300px);
   animation-delay: 2s;
+  animation-iteration-count: 1;
 }
-.star:nth-child(5)::before, .star:nth-child(1)::after {
+.star:nth-child(5)::before, .star:nth-child(5)::after {
   animation-delay: 2s;
+  animation-iteration-count: 1;
 }
 
 .star:nth-child(6) {
    z-index: 4;
+   opacity: 0.7;
   top: calc(41% - -50px);
   left: calc(50% - 190px);
   animation-delay: 5s;
+  animation-iteration-count: 1;
 }
-.star:nth-child(6)::before, .star:nth-child(2)::after {
+.star:nth-child(6)::before, .star:nth-child(6)::after {
   animation-delay: 5s;
+  animation-iteration-count: 1;
 }
 
 .star:nth-child(7) {
    z-index: 4;
+   opacity: 0.7;
   top: calc(34%);
   left: calc(71%);
   animation-delay: 9s;
   animation-iteration-count: 1;
 }
-.star:nth-child(7)::before, .star:nth-child(3)::after {
+.star:nth-child(7)::before, .star:nth-child(7)::after {
   animation-delay: 9s;
   animation-iteration-count: 1;
 }
@@ -137,12 +146,13 @@ export default {
 
 .star:nth-child(8) {
    z-index: 4;
+   opacity: 0.7;
   top: calc(-5% - -190px);
   left: calc(74% - 200px);
   animation-delay: 17s;
   animation-iteration-count: 1;
 }
-.star:nth-child(8)::before, .star:nth-child(5)::after {
+.star:nth-child(8)::before, .star:nth-child(8)::after {
   animation-delay: 17s;
   animation-iteration-count: 1;
 }
