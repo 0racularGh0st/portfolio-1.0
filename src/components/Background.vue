@@ -1,17 +1,41 @@
 <template>
-  <div id="main-background">
-    <div class="still-stars"></div>
-    <div class="twinkling"></div> 
+  <div>
+  
+    
+    <div class="starsandtwinkle">
+      <div class="still-stars">
+      <div class="twinkling"></div> 
+    </div>
+    </div>
     <div class="mountain"></div>
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
      <div class="star"></div>
-     <div class= "moon"></div>
+     <div id="moon" class= "moon"></div>
   </div>
 </template>
+<script>
 
+export default {
+  data(){
+    return{
+      moon: ''
+    }
+  },
+  mounted(){
+    this.moon = document.getElementById('moon');
+    this.moon.style.left = '0px';
+    this.moon.style.top= '0px';
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        this.moon.style.left= (value/2)+'px';
+        this.moon.style.top=-(value/2)+'px';
+    });
+  }
+}
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
@@ -26,8 +50,17 @@
     to {background-position:-10000px 5000px;}
 }
 
-.still-stars, .twinkling, .mountain, .moon{
+.mountain, .moon{
   position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.still-stars, .twinkling, .starsandtwinkle{
   top:0;
   left:0;
   right:0;
@@ -59,12 +92,13 @@
     top: 40%;
 }
 .moon{
-  background: transparent url(../assets/rsz_moon.png) no-repeat top right;
+    background: transparent url(../assets/rsz_moon.png) no-repeat top right;
     z-index: 5;
     background-size: 10rem;
     background-position-y: 30%;
     background-position-x: 90%;
     filter: brightness(0.9);
+    left: 0px;
 }
 .star {
   position: absolute;

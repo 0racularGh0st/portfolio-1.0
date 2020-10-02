@@ -14,5 +14,6 @@ h1{
   margin-top: 50vh;
   text-align: center;
   color: white;
+  height: 150vh;
 }
 </style>
