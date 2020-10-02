@@ -27,7 +27,5 @@ export default {
 }
 .home-class{
     position: relative;
-    color: white;
-    height: 150vh;
 }
 </style>
