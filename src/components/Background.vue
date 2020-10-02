@@ -30,14 +30,23 @@ export default {
     this.mountain = document.getElementById('mountain');
     this.moon.style.left = '0px';
     this.moon.style.top = '0px';
-    this.mountain.style.top = '40%';  
+   // this.mountain.style.top = '40%';  
     this.mountain.style.filter = 'brightness(0.7)';
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
         this.moon.style.left= (value/2)+'px';
         this.moon.style.top=-(value/3)+'px';
-        this.mountain.style.top = (value/5)<40? '40%' : (value/5)+'%';
-        this.mountain.style.filter = (1/(1+(value/300)))>0.7 ? 'brightness(0.7)' : 'brightness('+(1/(1+(value/300)))+')';
+      //  this.mountain.style.top = (value/5)<40? '40%' : (value/5)+'%';
+       // this.mountain.style.filter = (1/(1+(value/300)))>0.7 ? 'brightness(0.7)' : 'brightness('+(1/(1+(value/300)))+')';
+       if((1/(1+(value/300)))>0.7){
+            this.mountain.style.filter = 'brightness(0.7)';
+       }
+       else if((1/(1+(value/300)))<0.33){
+         this.mountain.style.filter = 'brightness(0.33)';
+       }
+       else{
+         this.mountain.style.filter =  'brightness('+(1/(1+(value/300)))+')';
+       }
     });
   }
 }
