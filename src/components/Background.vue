@@ -90,6 +90,7 @@ export default {
     background-position-y: 60%;
     height: 60%;
     top: 40%;
+    background-size: cover;
 }
 .moon{
     background: transparent url(../assets/rsz_moon.png) no-repeat top right;
