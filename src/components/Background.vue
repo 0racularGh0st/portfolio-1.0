@@ -1,7 +1,5 @@
 <template>
   <div>
-  
-    
     <div class="starsandtwinkle">
       <div class="still-stars">
       <div class="twinkling"></div> 
@@ -18,17 +16,11 @@
 </template>
 <script>
 import MountainImage from '../assets/mountain5.jpg';
-let mImage = new Image();
-mImage.src = MountainImage;
-mImage.onload = async function(){
-  await alert("Image Loaded");
-}
 export default {
   data(){
     return{
       moon: '',
-      mountain: '',
-      mountainImage: ''
+      mountain: ''
     }
   },
   computed: {
