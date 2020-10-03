@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import MountainImage from '../assets/mountain5.jpg';
+import MountainImage from '../assets/mountain.jpg';
 export default {
   data(){
     return{
@@ -100,18 +100,18 @@ export default {
 }
 
 .still-stars {
-  background:#000 url(../assets/stars.png) repeat top center;
+  background:#000 url(../assets/stars.jpg) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(../assets/twinkling.png) repeat top center;
+  background:transparent url(../assets/twinkling.jpg) repeat top center;
   z-index:1;
   animation:move-twink-back 200s linear infinite;
 }
 
 .moon{
-    background: transparent url(../assets/rsz_moon.png) no-repeat top right;
+    background: transparent url(../assets/rsz_moon.jpg) no-repeat top right;
     z-index: 5;
     background-size: 10rem;
     background-position-y: 30%;

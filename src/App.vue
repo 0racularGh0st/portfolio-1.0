@@ -6,10 +6,10 @@
 </template>
 <script>
 
-import MountainImage from './assets/mountain5.jpg';
-import MoonImage from './assets/rsz_moon.png';
-import StarsImage from './assets/stars.png';
-import TwinklingImage from './assets/twinkling.png';
+import MountainImage from './assets/mountain.jpg';
+import MoonImage from './assets/rsz_moon.jpg';
+import StarsImage from './assets/stars.jpg';
+import TwinklingImage from './assets/twinkling.jpg';
 import MainContent from './views/MainContent';
 export default {
   data(){
