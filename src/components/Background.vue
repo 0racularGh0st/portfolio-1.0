@@ -7,7 +7,7 @@
       <div class="twinkling"></div> 
     </div>
     </div>
-    <div id="mountain" class="mountain"></div>
+    <div id="mountain" class="mountain" v-bind:style="mountainStyles"></div>
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
@@ -17,14 +17,36 @@
   </div>
 </template>
 <script>
-
+import MountainImage from '../assets/mountain5.jpg';
+let mImage = new Image();
+mImage.src = MountainImage;
+mImage.onload = async function(){
+  await alert("Image Loaded");
+}
 export default {
   data(){
     return{
       moon: '',
-      mountain: ''
+      mountain: '',
+      mountainImage: ''
     }
   },
+  computed: {
+    mountainStyles: function(){
+      return {
+        background: "transparent url("+MountainImage+") no-repeat",
+        zIndex: 6,
+        width: "100%",
+        filter: "brightness(0.7)",
+        backgroundPositionY: "60%",
+        height: "60%",
+        top: "40%",
+        backgroundSize: "cover"
+      }
+    }
+  }
+  ,
+
   mounted(){
     this.moon = document.getElementById('moon');
     this.mountain = document.getElementById('mountain');
@@ -96,17 +118,6 @@ export default {
   animation:move-twink-back 200s linear infinite;
 }
 
-.mountain{
-    background: transparent url(../assets/mountain4.png) no-repeat bottom;
-    z-index: 6;
-    height: auto;
-    width: 100%;
-    filter: brightness(0.7);
-    background-position-y: 60%;
-    height: 60%;
-    top: 40%;
-    background-size: cover;
-}
 .moon{
     background: transparent url(../assets/rsz_moon.png) no-repeat top right;
     z-index: 5;
