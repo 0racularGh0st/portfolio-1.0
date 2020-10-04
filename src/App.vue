@@ -1,11 +1,11 @@
 <template>
   <div id="main-app">
-    <MainContent id="main-content" v-show="(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></MainContent>
-    <div v-show="!(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"> Loading... </div>
+    <MainContent id="main-content" v-show="(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></MainContent> 
+    <Loading v-show="!(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></Loading>
   </div>
 </template>
 <script>
-
+import Loading from './components/Loading';
 import MountainImage from './assets/mountain.jpg';
 import MoonImage from './assets/rsz_moon.jpg';
 import StarsImage from './assets/stars.jpg';
@@ -62,6 +62,7 @@ export default {
      }
   },
   components:{
+    Loading,
     MainContent
   }
 }
