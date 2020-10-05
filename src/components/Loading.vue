@@ -1,6 +1,7 @@
 <template>
 <div class="loading-container">
-  <div class="loading">
+    <img src="../assets/mylogo.png" class="logo"/>
+    <div class="loading">
         <div class="bars"></div>
         <div class="bars"></div>
         <div class="bars"></div>
@@ -19,31 +20,34 @@ body {
     padding: 0;
     background-color: #00b0a6;
 }
-.loading-container{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+.logo{
+    height: 125px;
+    width: 125px;
 }
-.loading {
-    position: absolute;
-    height: 50px;
+.loading-container{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
     top: 50%;
     left: 50%;
+    transform: translate(-43%, -79%);
+}
+.loading {
+   height: 50px;
     display: flex;
     align-items: center;
-    transform: translate(-50%, -50%)
 }
 
 .bars {
    height: 50px;
-    width: 5px;
-    margin: 0 4px;
+    width: 3px;
+    margin: 0 3.5px;
     border-radius: 10px;
-    background: linear-gradient(to bottom, rgb(118 172 218) 0%,rgb(181 200 255) 50%,rgb(0 0 0) 100%);
+    background: linear-gradient(to bottom, rgb(58 102 167) 0%,rgb(108 228 231) 100%);
     -webkit-animation: loading 0.8s infinite;
     animation: loading 0.8s infinite;
-    box-shadow: 0px -6px 20px 2px #85f9f7;
-
 }
 
 .bars:nth-child(2) {

@@ -80,7 +80,7 @@ export default {
 </script>
 <style scoped >
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1.3s ease-in-out;
 }
 .component-fade-enter, .component-fade-leave-to
  {
