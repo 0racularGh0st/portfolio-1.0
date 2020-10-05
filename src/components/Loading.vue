@@ -21,7 +21,6 @@ body {
 }
 .loading-container{
     position: relative;
-    background: black;
     height: 100vh;
     width: 100vw;
 }
@@ -36,14 +35,15 @@ body {
 }
 
 .bars {
-    height: 50px;
+   height: 50px;
     width: 5px;
     margin: 0 4px;
     border-radius: 10px;
-    background: linear-gradient(to bottom, rgb(225 205 243) 0%,rgba(138,187,215,1) 50%,rgb(189 255 203) 100%);
+    background: linear-gradient(to bottom, rgb(118 172 218) 0%,rgb(181 200 255) 50%,rgb(0 0 0) 100%);
     -webkit-animation: loading 0.8s infinite;
     animation: loading 0.8s infinite;
-    box-shadow: 0px 11px 20px 0px #85f9f7;
+    box-shadow: 0px -6px 20px 2px #85f9f7;
+
 }
 
 .bars:nth-child(2) {

@@ -1,7 +1,10 @@
 <template>
   <div id="main-app">
-    <MainContent id="main-content" v-show="(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></MainContent> 
-    <Loading v-show="!(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></Loading>
+    <!-- <MainContent id="main-content" v-show="(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></MainContent> 
+    <Loading v-show="!(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></Loading> -->
+  <transition name="component-fade" mode="out-in">
+      <component v-bind:is="componentToShow"></component>
+  </transition>
   </div>
 </template>
 <script>
@@ -61,6 +64,14 @@ export default {
        }
      }
   },
+  computed: {
+    componentToShow: function(){
+      if(!(this.mountainImageDownloaded && this.moonImageDownloaded && this.starsImageDownloaded && this.twinklingImageDownloaded))
+          return "Loading"
+      else 
+          return "MainContent"
+    }
+  },
   components:{
     Loading,
     MainContent
@@ -68,5 +79,11 @@ export default {
 }
 </script>
 <style scoped >
-
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+.component-fade-enter, .component-fade-leave-to
+ {
+  opacity: 0;
+}
 </style>
