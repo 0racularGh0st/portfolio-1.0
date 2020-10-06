@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="the-background" class="the-background" v-bind:style="backgroundHeight">
     <div class="starsandtwinkle">
       <div class="still-stars">
       <div class="twinkling"></div> 
@@ -15,12 +15,15 @@
   </div>
 </template>
 <script>
+
 import MountainImage from '../assets/mountain.jpg';
 export default {
   data(){
     return{
       moon: '',
-      mountain: ''
+      mountain: '',
+      background: '',
+      viewportDiff: ''
     }
   },
   computed: {
@@ -35,11 +38,25 @@ export default {
         top: "40%",
         backgroundSize: "cover"
       }
+    },
+    backgroundHeight: function(){
+      return {
+         height: "calc(100vh + "+this.viewportDiff+"px)",
+         top: "0",
+         left: "0",
+         right: "0",
+         bottom: "0",
+         position: "fixed",
+         backgroundSize: "cover",
+         backgroundAttachment: "fixed",
+         background: "inherit"
+      }
     }
   }
   ,
 
   mounted(){
+     this.viewportDiff = document.documentElement.clientHeight - window.innerHeight;
     this.moon = document.getElementById('moon');
     this.mountain = document.getElementById('mountain');
     this.moon.style.left = '0px';

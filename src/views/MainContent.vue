@@ -1,7 +1,7 @@
 <template>
 <div>
   <div id="main-content">
-    <background class="the-background"></background>
+    <background ></background>
     <home class="home-class"></home>
   </div>
 </div>
@@ -23,16 +23,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.the-background{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    background: inherit;
-}
+
 .home-class{
     position: relative;
 }
