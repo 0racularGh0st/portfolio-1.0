@@ -36,7 +36,11 @@ export default {
         backgroundPositionY: "60%",
         height: "60%",
         top: "40%",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        transform: "translate3d(0px, 0px, 0px)",
+        "-webkit-transform": "translate3d(0px, 0px, 0px)",
+        transition: "all 0s ease",
+        backfaceVisibility: "hidden"
       }
     },
     backgroundHeight: function(){
@@ -135,6 +139,7 @@ export default {
     background-position-x: 90%;
     filter: brightness(0.9);
     left: 0px;
+    transition: all 0s ease;
 }
 .star {
   position: absolute;
