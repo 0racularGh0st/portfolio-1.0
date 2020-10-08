@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <h1>Home Page</h1>
+    <div class="content">
+      const nigel = FullStack Developer;
+    </div>
   </div>
 </template>
 
@@ -10,10 +12,14 @@ export default {
 }
 </script>
 <style scoped>
-h1{
-  margin-top: 50vh;
-  text-align: center;
-  color: white;
+.home{
   height: 150vh;
+}
+.content{
+  margin-top: 50vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+   color: #9bafb7;
 }
 </style>
