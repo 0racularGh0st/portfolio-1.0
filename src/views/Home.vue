@@ -1,8 +1,22 @@
 <template>
   <div class="home">
-    <div class="content">
-      const nigel = FullStack Developer;
-    </div>
+    <h2 class="content">
+      <div class="const">
+        const
+      </div>
+      <div class="nigel">
+        nigel
+      </div>
+      <div class="equal">
+       = 
+       </div>
+      <div class="fullstack">
+        FullStack_Developer
+      </div>
+      <div class="colon">
+        ;
+      </div>
+    </h2>
   </div>
 </template>
 
@@ -20,6 +34,27 @@ export default {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
-   color: #9bafb7;
+  display: flex;
+  justify-content: center;
+}
+.const{
+  margin-right:0.5rem;
+  color: #de6f9e;
+}
+.nigel{
+  margin-right:0.5rem;
+  color: #4496cf
+}
+.equal{
+ margin-right:0.5rem;
+  color: #9bafb7;
+}
+.fullstack{
+  margin-right:0.5rem;
+  color : #c2a163
+}
+.colon{
+  margin-right:0.5rem;
+    color: #9bafb7;
 }
 </style>
