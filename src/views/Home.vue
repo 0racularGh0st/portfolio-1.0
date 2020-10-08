@@ -36,6 +36,7 @@ export default {
   text-align: center;
   display: flex;
   justify-content: center;
+  font-size: large;
 }
 .const{
   margin-right:0.5rem;
@@ -50,7 +51,6 @@ export default {
   color: #9bafb7;
 }
 .fullstack{
-  margin-right:0.5rem;
   color : #c2a163
 }
 .colon{
