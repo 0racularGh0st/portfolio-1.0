@@ -1,5 +1,6 @@
 h1{
     font-size: 1em;
+    letter-spacing: 1.3px;
 }
 @media (min-width: 320px)
 {
@@ -9,7 +10,7 @@ h1{
     }
 }
 
-@media (min-width: 768px)
+@media (min-width: 1024px)
 {
     h1{
         font-size: 2em;

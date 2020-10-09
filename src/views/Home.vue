@@ -26,7 +26,7 @@ export default {
   justify-content: center;
 }
 .line{
-  color:#94a7b0;
+  color:#cee8f5;
     animation: typewriter 3s steps(36);
     overflow : hidden;
     white-space: nowrap;
