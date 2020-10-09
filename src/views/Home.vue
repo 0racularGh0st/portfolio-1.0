@@ -1,21 +1,10 @@
 <template>
   <div class="home">
     <h2 class="content">
-      <div class="const">
-        const
+      <div class="intro">
+        Hi, I'm Nigel. FullStack Developer.
       </div>
-      <div class="nigel">
-        nigel
-      </div>
-      <div class="equal">
-       = 
-       </div>
-      <div class="fullstack">
-        FullStack_Developer
-      </div>
-      <div class="colon">
-        ;
-      </div>
+      
     </h2>
   </div>
 </template>
@@ -38,23 +27,24 @@ export default {
   justify-content: center;
   font-size: large;
 }
-.const{
-  margin-right:0.5rem;
-  color: #de6f9e;
+.intro{
+  color:#94a7b0;
+    animation: type 3s steps(35);
+    overflow : hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    width: 35ch;
+    letter-spacing: 1.3px;
+    
 }
-.nigel{
-  margin-right:0.5rem;
-  color: #4496cf
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 35ch;
+  }
+  
 }
-.equal{
- margin-right:0.5rem;
-  color: #9bafb7;
-}
-.fullstack{
-  color : #c2a163
-}
-.colon{
-  margin-right:0.5rem;
-    color: #9bafb7;
-}
+
 </style>
