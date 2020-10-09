@@ -1,15 +1,16 @@
 <template>
   <div class="home">
-    <h2 class="content">
+    <h1 class="content">
       <div class="line anim-typewriter">
         Hi, I'm Nigel. FullStack Developer.
       </div>
       
-    </h2>
+    </h1>
   </div>
 </template>
 
 <script>
+import './fonts.css';
 export default {
   
 }
@@ -23,16 +24,14 @@ export default {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 100%;
 }
 .line{
   color:#94a7b0;
-    animation: type 3s steps(36);
+    animation: typewriter 3s steps(36);
     overflow : hidden;
     white-space: nowrap;
     border-right: 2px solid rgba(255,255,255,0.75);
     width: 36ch;
-    letter-spacing: 1.3px;
     transform: translateY(-50%);
     
 }
