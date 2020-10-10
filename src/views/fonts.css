@@ -1,19 +1,42 @@
 h1{
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 1.3px;
+    font-family: 'Orbitron', sans-serif;
+
 }
 @media (min-width: 320px)
 {
     h1{
-        font-size: 1em;
+        font-size: 0.9em;
         letter-spacing: 1.3px;
+        font-family: 'Orbitron', sans-serif;
+
     }
 }
+@media (min-width: 375px)
+{
+    h1{
+        font-size: 1em;
+        letter-spacing: 1.3px;
+        font-family: 'Orbitron', sans-serif;
 
+    }
+}
+@media (min-width: 768px)
+{
+    h1{
+        font-size: 1.2em;
+        letter-spacing: 1.3px;
+        font-family: 'Orbitron', sans-serif;
+
+    }
+}
 @media (min-width: 1024px)
 {
     h1{
-        font-size: 2em;
+        font-size: 1.7em;
         letter-spacing: 2.3px;
+        font-family: 'Orbitron', sans-serif;
+
     }
 }

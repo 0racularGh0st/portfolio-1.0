@@ -26,7 +26,7 @@ export default {
   justify-content: center;
 }
 .line{
-  color:#cee8f5;
+    color:#cee8f5;
     animation: typewriter 3s steps(36);
     overflow : hidden;
     white-space: nowrap;
@@ -44,7 +44,7 @@ export default {
     width: 0ch;
   }
   100% {
-    width: 36ch;
+    width: 25ch;
   }
   
 }
