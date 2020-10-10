@@ -22,15 +22,6 @@ h1{
 
     }
 }
-@media (min-width: 768px)
-{
-    h1{
-        font-size: 1.2em;
-        letter-spacing: 1.3px;
-        font-family: 'Orbitron', sans-serif;
-
-    }
-}
 @media (min-width: 1024px)
 {
     h1{

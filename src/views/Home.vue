@@ -44,7 +44,7 @@ export default {
     width: 0ch;
   }
   100% {
-    width: 25ch;
+    width: 27ch;
   }
   
 }
