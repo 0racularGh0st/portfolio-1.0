@@ -14,6 +14,7 @@ import MoonImage from './assets/rsz_moon.jpg';
 import StarsImage from './assets/stars.jpg';
 import TwinklingImage from './assets/twinkling.jpg';
 import MainContent from './views/MainContent';
+import './views/fonts.css';
 export default {
   data(){
     //Using these flags to show a loader first until all background images are downloaded
