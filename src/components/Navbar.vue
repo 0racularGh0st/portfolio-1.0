@@ -50,13 +50,27 @@ const navSlide = () => {
             });
            
         }
+const dropShadow = () =>{
+    window.addEventListener('scroll',()=>{
+            const nav = document.querySelector('nav');
+           // console.log("scrolled", window.pageYOffset);
+            if(window.pageYOffset>10){
+                nav.classList.add('nav-drop-shadow');
+            }
+            else{
+                nav.classList.remove('nav-drop-shadow');
+            }
+        });
+    }
 export default {
     mounted(){
         navSlide();
-    }
+        dropShadow();
+}
 }
 </script>
 <style >
+
 .navstyle{
     position: absolute;
     top: 0;
@@ -71,7 +85,12 @@ export default {
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     align-items: center;
+    background: rgba(0,0,0,0.9);
+    transition: box-shadow .3s ease;
 
+}
+.nav-drop-shadow{
+    box-shadow: 0px 4px 13px 1px rgb(36,54,66,0.4);
 }
 .nav-links{
     display: flex;
@@ -93,12 +112,13 @@ export default {
         width: 100vw;
         height: 64px;
         background: rgba(0,0,0,0.9);
+         transition: box-shadow .3s ease;
     }
 }
 .mylogo > img{
     margin: 1rem;
-    margin-top: 1.5rem;
-    height: 50px;
+    margin-top: 1.2rem;
+    height: 42px;
     background: radial-gradient(circle, rgb(27 69 95) 0%, rgb(11 21 33) 52%, transparent 100%);
     border-radius: 50%;
     box-shadow: 0 0 17px 2px #4c5860;

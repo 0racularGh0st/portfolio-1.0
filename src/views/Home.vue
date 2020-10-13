@@ -19,7 +19,7 @@ export default {
       }
     },
     mounted(){
-           setTimeout(()=>{this.startType()},2000);
+           setTimeout(()=>{this.startType()},3000);
     },
     methods: {
       startType : function(){
