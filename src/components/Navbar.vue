@@ -121,7 +121,7 @@ export default {
     height: 42px;
     background: radial-gradient(circle, rgb(27 69 95) 0%, rgb(11 21 33) 52%, transparent 100%);
     border-radius: 50%;
-    box-shadow: 0 0 17px 2px #4c5860;
+    box-shadow:0 0 17px 2px rgb(92,129,154,0.5);
 }
 .burger{
     display: none;
