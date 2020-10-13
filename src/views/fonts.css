@@ -1,7 +1,7 @@
 h1{
     font-size: 0.9em;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
 
 }
 @media (min-width: 320px)
@@ -9,7 +9,7 @@ h1{
     h1{
         font-size: 0.9em;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Comfortaa';
 
     }
 }
@@ -18,7 +18,7 @@ h1{
     h1{
         font-size: 1em;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Comfortaa';
 
     }
 }
@@ -27,7 +27,7 @@ h1{
     h1{
         font-size: 1.7em;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Comfortaa';
 
     }
 }
