@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="content">
-      <div class="line-typing">
+      <div id="line-typing" class="line-typing">
         
       </div>
       

@@ -82,6 +82,7 @@ export default {
 <style scoped >
 .component-fade-enter-active, .component-fade-leave-active {
   transition: opacity .5s ease;
+  transition-delay: 1s;
 }
 .component-fade-enter, .component-fade-leave-to
  {
