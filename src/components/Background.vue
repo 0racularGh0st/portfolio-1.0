@@ -93,7 +93,9 @@ export default {
     margin: 0;
     padding: 0;
 }
-
+body{
+  background: black;
+}
 
 @keyframes move-twink-back {
     from {background-position:0 0;}

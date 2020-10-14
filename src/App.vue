@@ -1,5 +1,5 @@
 <template>
-  <div id="main-app">
+  <div id="main-app" class="main-app">
     <!-- <MainContent id="main-content" v-show="(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></MainContent> 
     <Loading v-show="!(mountainImageDownloaded && moonImageDownloaded && starsImageDownloaded && twinklingImageDownloaded)"></Loading> -->
   <transition name="component-fade" mode="out-in">
@@ -80,12 +80,20 @@ export default {
 }
 </script>
 <style scoped >
+body{
+  background: black;
+}
+.main-app{
+  background: black;
+}
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity .5s ease;
+  transition: all 0.5s ease;
   transition-delay: 1s;
+  opacity: 1;
 }
 .component-fade-enter, .component-fade-leave-to
  {
   opacity: 0;
+
 }
 </style>

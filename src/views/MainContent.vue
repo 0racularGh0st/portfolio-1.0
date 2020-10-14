@@ -26,7 +26,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-
+body{
+  background: black;
+}
 .home-class{
     position: relative;
 }
