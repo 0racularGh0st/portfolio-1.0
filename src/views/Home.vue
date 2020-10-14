@@ -10,6 +10,21 @@
 </template>
 
 <script>
+window.addEventListener("load", function() { 
+  
+  setTimeout(startType,localStorage.getItem('page-cached') ? 2000 : 4000);
+});
+let index=0;
+const text = "Hi, I'm Nigel. FullStack Developer."
+let letter='';
+const startType = ()=>{
+          if(document.querySelector('.line-typing')){
+            letter = text.slice(0,++index);
+          document.querySelector('.line-typing').textContent = letter;
+          }
+          if(index!==text.length)
+          setTimeout(startType,70);
+}
 export default {
     data(){
       return {
@@ -19,17 +34,19 @@ export default {
       }
     },
     mounted(){
-           setTimeout(()=>{this.startType()},3000);
+      localStorage.setItem('page-cached',true);
+      
+           //setTimeout(()=>{startType()},2000);
     },
     methods: {
-      startType : function(){
+      // startType : function(){
           
-          let self = this;
-          self.letter = self.text.slice(0,++self.index);
-          document.querySelector('.line-typing').textContent = self.letter;
-          if(self.index!==self.text.length)
-          setTimeout(this.startType,70);
-      }
+      //     let self = this;
+      //     self.letter = self.text.slice(0,++self.index);
+      //     document.querySelector('.line-typing').textContent = self.letter;
+      //     if(self.index!==self.text.length)
+      //     setTimeout(this.startType,70);
+      // }
     }
 }
 </script>
