@@ -76,7 +76,7 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
+        link.style.animation = `navLinkFade 0.3s ease forwards ${
           index / 7 + 0.3
         }s`;
       }
@@ -101,6 +101,27 @@ const dropShadow = () => {
     }
   });
 };
+
+const hideNav = () =>{
+    const burger = document.querySelector(".burger");
+     const nav = document.querySelector("nav");
+    var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", () => {
+   
+      if(window.pageYOffset>64){
+          var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    nav.classList.remove('hidenav');
+  } else {
+      if(burger.classList.contains('toggle'))
+      burger.click();
+    nav.classList.add('hidenav');
+  }
+  prevScrollpos = currentScrollPos;
+      }
+    
+  });
+};
 export default {
   mounted() {
     navSlide();
@@ -114,6 +135,7 @@ export default {
         return i * 250;
       },
     });
+    hideNav();
   },
 };
 </script>
@@ -131,10 +153,9 @@ svg {
   margin: 0 auto;
   fill: none;
   transform: translateX(-11.5px) translateY(-31px);
-  filter: drop-shadow(0 0 0.4rem rgb(106, 228, 230));
 }
 svg:hover {
-  filter: drop-shadow(0 0 0.2rem rgb(106, 228, 230));
+  filter: drop-shadow(0 0 0.4rem rgb(106, 228, 230));
 }
 .navstyle {
   position: absolute;
@@ -151,7 +172,11 @@ svg:hover {
   text-transform: uppercase;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
-  transition: box-shadow 0.3s ease;
+  transition: all 0.5s ease;
+  top: 0px;
+}
+.hidenav{
+    top: -64px
 }
 .nav-drop-shadow {
   box-shadow: 0px 4px 13px 1px rgb(36, 54, 66, 0.4);
@@ -176,8 +201,12 @@ svg:hover {
     width: 100vw;
     height: 64px;
     background: rgba(0, 0, 0, 0.9);
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    top: 0px;
   }
+  .hidenav{
+    top: -64px
+}
 }
 .mylogo > img {
   height: 30px;
@@ -197,7 +226,7 @@ svg:hover {
   background-color: #cee8f5;
   margin: 5px;
   border-radius: 10px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   body {
