@@ -86,6 +86,7 @@ const navSlide = () => {
   });
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
+      if(window.innerWidth<769)
       burger.click();
     });
   });
@@ -122,8 +123,15 @@ window.addEventListener("scroll", () => {
     
   });
 };
+const dropDemLinks= () => {
+ const navLinks = document.querySelectorAll(".nav-links li");
+  navLinks.forEach((link) => {
+        link.classList.add('navLinksShow');
+    });
+}
 export default {
   mounted() {
+    dropDemLinks();
     navSlide();
     dropShadow();
     anim.add({
@@ -186,8 +194,31 @@ svg:hover {
   justify-content: space-around;
   width: 45%;
 }
-.nav-links li {
+@media (min-width: 769px){
+  .nav-links li {
   list-style: none;
+  opacity: 0;
+}
+.navLinksShow:nth-child(1){
+  animation: 0.3s ease 0.3s 1 normal forwards running navLinksDrop;
+}
+.navLinksShow:nth-child(2){
+  animation: 0.3s ease 0.44s 1 normal forwards running navLinksDrop;
+}
+.navLinksShow:nth-child(3){
+  animation: 0.3s ease 0.58s 1 normal forwards running navLinksDrop;
+}
+@keyframes navLinksDrop {
+  0%{
+    opacity: 0;
+    transform: translateY(-64px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+  
 }
 .nav-links a {
   color: #cee8f5;
@@ -241,7 +272,7 @@ svg:hover {
     align-items: center;
     width: 40%;
     transform: translateX(100%);
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
     height: 165px;
     background: linear-gradient(
       240deg,
