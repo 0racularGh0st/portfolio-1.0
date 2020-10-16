@@ -150,17 +150,16 @@ export default {
 <style >
 .container {
   width: max-content;
-  max-width: 100px;
-  position: absolute;
+  max-width: 46px;
 }
 
 svg {
-  width: 46%;
-  height: 46%;
-  display: block;
-  margin: 0 auto;
-  fill: none;
-  transform: translateX(-11.5px) translateY(-31px);
+  width: 46px;
+    height: 46px;
+    display: block;
+    margin: 0 auto;
+    fill: none;
+    transform: translateX(15.5px) translateY(-9px);
 }
 svg:hover {
   filter: drop-shadow(0 0 0.4rem rgb(106, 228, 230));
@@ -241,8 +240,8 @@ svg:hover {
 }
 .mylogo > img {
   height: 30px;
-  position: absolute;
-  transform: translateX(23.5px) translateY(-25px);
+    position: absolute;
+    transform: translateX(23.5px) translateY(-3px);
 }
 .mylogo {
   position: relative;
