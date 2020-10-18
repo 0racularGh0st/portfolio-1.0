@@ -1,10 +1,10 @@
 <template>
-     <svg
-              id="hexagon"
-              viewBox="0 0 100 100"
+     <svg     
+              id="dummy-svg-container"
+              viewBox="0 0 0 0"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
+              height= "0"
+              width= "0"
             >
               <defs>
                 <linearGradient id="main-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -18,22 +18,7 @@
                   />
                 </linearGradient>
               </defs>
-              <path
-                stroke="url(#grad1)"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M 50, 5
-         L 11, 27
-         L 11, 72
-         L 50, 95
-         L 89, 73
-         L 89, 28 z"
-              />
             </svg>
 </template>
 <style scoped>
-.svg-linear-gradient{
-    display: none;
-}
 </style>
