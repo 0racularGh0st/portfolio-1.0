@@ -284,7 +284,7 @@ export default {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #cee8f5;
+  background: linear-gradient(90deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 100%);
   margin: 5px;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -310,7 +310,7 @@ export default {
       rgb(5 8 12) 52%,
       transparent 100%
     );
-    border-bottom-left-radius: 75%;
+  
     box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   }
   .nav-links li {
