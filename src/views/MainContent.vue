@@ -5,6 +5,7 @@
     <home class="home-class"></home>
     <mynavbar></mynavbar>
     <social></social>
+    <my-footer></my-footer>
   </div>
 </div>
 </template>
@@ -14,6 +15,7 @@ const Background = defineAsyncComponent(() => import("../components/Background" 
 const Home = defineAsyncComponent(() => import("./Home" /* webpackChunkName: "home" */));
 const Navbar = defineAsyncComponent(() => import("../components/Navbar" /* webpackChunkName: "navbar" */));
 const Social = defineAsyncComponent(()=> import("../components/Social" /* webpackChunkName: "social" */));
+const Footer = defineAsyncComponent(()=> import("../components/Footer" /* webpackChunkName: "footer" */));
 export default {
   data(){
     return {
@@ -24,7 +26,8 @@ export default {
     'background': Background,
     'home': Home,
     'mynavbar' : Navbar,
-    'social' : Social
+    'social' : Social,
+    'my-footer' : Footer
   }
 }
 </script>

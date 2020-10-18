@@ -31,17 +31,23 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.outer-social-container{
-    position: absolute;
-    bottom: 65%;
-    left: 26px;
-}
-@media screen and (max-width: 768px){
+
+@media (min-width: 0px){
+    .outer-social-container{
+        position: relative;
+    }
     .social-container{
-        display: none;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
     }
 }
 @media (min-width: 769px){
+        .outer-social-container{
+              position: absolute;
+              bottom: 65%;
+              left: 26px;
+            }
         .social-container{
             position:absolute;
             display: flex;
