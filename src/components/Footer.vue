@@ -1,6 +1,8 @@
 <template>
     <div class="footer">
-        <div>Designed and Built</div><div> by </div><div class="name">Nigel David Tariang</div>
+        <div class="other-text">Designed and Built</div>
+        <div class="other-text"> by </div>
+        <div class="name">Nigel David Tariang</div>
     </div>
 </template>
 <script>
@@ -12,20 +14,17 @@ export default {
 .footer{
         position: relative;
     text-align: center;
-    color: #cee8f5;
     font-family: 'Comfortaa';
-    font-size: 10px;
     line-height: 1rem;
     margin-bottom: 2rem;
+    font-size: 0.7rem;
+}
+.other-text{
+     color: #cee8f5;
+     
 }
 .name{
-    font-size: 12px;
-    background: linear-gradient(90deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: fit-content;
-    display: flex;
-    margin: 0 auto;
+   
+    color: rgb(106, 228, 230);
 }
 </style>

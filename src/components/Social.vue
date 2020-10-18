@@ -32,15 +32,40 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-@media (min-width: 0px){
+@media (max-width: 768px){
     .outer-social-container{
         position: relative;
+        justify-content: center;
+        margin: 0 10%;
     }
     .social-container{
         display: flex;
         justify-content: space-around;
         margin-bottom: 2rem;
+        width: 100%;
+        align-items: center;
     }
+    .vertical-line1{
+            background: linear-gradient(-45deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 50%, transparent 100%);
+            height: 1.5px;
+            width: 100%;
+            opacity: 0.8;
+        }
+        .vertical-line2{
+            background: linear-gradient(45deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 50%, transparent 100%);
+            height: 1.5px;
+            width: 100%;
+            opacity: 0.8;
+        }
+        .github{
+            margin: 0 1rem;
+        }
+        .linkedin{
+            margin-right: 1rem;
+        }
+        .email{
+            margin-right: 1rem;
+        }
 }
 @media (min-width: 769px){
         .outer-social-container{
