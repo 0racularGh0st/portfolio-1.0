@@ -163,7 +163,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 .container {
   width: max-content;
   max-width: 46px;
