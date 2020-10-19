@@ -93,8 +93,8 @@ body{
   background: black;
 }
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: all 0.5s ease;
-  /* transition-delay: 0.2s; */
+  transition: all 1s ease;
+  /* transition-delay: 0.7s; */
   opacity: 1;
 }
 .component-fade-enter, .component-fade-leave-to

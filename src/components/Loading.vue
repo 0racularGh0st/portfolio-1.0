@@ -40,7 +40,7 @@ anim
     targets: '#hexagon path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutQuart',
-    duration: 500,
+    duration: 1000,
     delay: function(el, i) { return i * 250 },
   })
 
