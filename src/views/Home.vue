@@ -12,7 +12,7 @@
 <script>
 window.addEventListener("load", function() { 
   
-  setTimeout(startType,localStorage.getItem('page-cached') ? 3000 : 4000);
+  setTimeout(startType,localStorage.getItem('page-cached') ? 3000 : 3000);
 });
 let index=0;
 const text = "Hi, I'm Nigel. FullStack Developer."

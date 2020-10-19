@@ -15,8 +15,10 @@
   </div>
 </template>
 <script>
-
-import MountainImage from '../assets/mountain.jpg';
+// const Modernizer = window.Modernizr;
+import MountainImage from '../assets/mountain.webp';
+import MountainImageJpg from '../assets/mountain.jpg';
+let mountainImage= MountainImage;
 export default {
   data(){
     return{
@@ -26,10 +28,13 @@ export default {
       viewportDiff: ''
     }
   },
+  created(){
+    mountainImage = window.Modernizr.webp? MountainImage : MountainImageJpg;
+  },
   computed: {
     mountainStyles: function(){
       return {
-        background: "transparent url("+MountainImage+") no-repeat",
+        background: "transparent url("+mountainImage+") no-repeat",
         zIndex: 6,
         width: "100%",
         filter: "brightness(0.7)",
@@ -122,19 +127,41 @@ body{
   display:block;
 }
 
-.still-stars {
-  background:#000 url(../assets/stars.jpg) repeat top center;
+.webp .still-stars {
+  background: url(../assets/stars.webp) repeat top center #000;
+  background-repeat: repeat;
   z-index:0;
 }
-
-.twinkling{
-  background:transparent url(../assets/twinkling.jpg) repeat top center;
+.no-webp .still-stars {
+  background: url(../assets/stars.jpg) repeat top center #000;
+  background-repeat: repeat;
+  z-index:0;
+}
+.webp .twinkling{
+  background: url(../assets/twinkling.webp) repeat top center transparent;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+.no-webp .twinkling{
+  background:url(../assets/twinkling.jpg) repeat top center transparent;
   z-index:1;
   animation:move-twink-back 200s linear infinite;
 }
 
-.moon{
-    background: transparent url(../assets/rsz_moon.jpg) no-repeat top right;
+.webp .moon{
+    background: url(../assets/rsz_moon.webp) top right transparent;
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: 10rem;
+    background-position-y: 30%;
+    background-position-x: 90%;
+    filter: brightness(0.9);
+    left: 0px;
+    transition: all 0s ease;
+}
+.no-webp .moon{
+    background:url(../assets/rsz_moon.jpg) top right transparent;
+    background-repeat: no-repeat;
     z-index: 5;
     background-size: 10rem;
     background-position-y: 30%;

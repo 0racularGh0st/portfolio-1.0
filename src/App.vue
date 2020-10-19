@@ -8,11 +8,16 @@
   </div>
 </template>
 <script>
+const Modernizer = window.Modernizr;
+   import MountainImage from './assets/mountain.webp';
+   import MoonImage from './assets/rsz_moon.webp';
+   import StarsImage from './assets/stars.webp';
+   import TwinklingImage from './assets/twinkling.webp';
+   import MountainImageJpg from './assets/mountain.jpg';
+   import MoonImageJpg from './assets/rsz_moon.jpg';
+   import StarsImageJpg from './assets/stars.jpg';
+   import TwinklingImageJpg from './assets/twinkling.jpg';
 import Loading from './components/Loading';
-import MountainImage from './assets/mountain.jpg';
-import MoonImage from './assets/rsz_moon.jpg';
-import StarsImage from './assets/stars.jpg';
-import TwinklingImage from './assets/twinkling.jpg';
 import MainContent from './views/MainContent';
 import './views/fonts.css';
 export default {
@@ -30,15 +35,16 @@ export default {
   },
   methods: {
      imageReady: function(){
+       let isWebpSupported = Modernizer.webp;
        let self = this;
         let mountainImage = new Image();
         let moonImage = new Image();
         let starsImage = new Image();
         let twinklingImage = new Image();
-        mountainImage.src = MountainImage;
-        moonImage.src = MoonImage;
-        starsImage.src = StarsImage;
-        twinklingImage.src = TwinklingImage;
+        mountainImage.src = isWebpSupported?  MountainImage : MountainImageJpg;
+        moonImage.src = isWebpSupported? MoonImage : MoonImageJpg;
+        starsImage.src = isWebpSupported? StarsImage : StarsImageJpg;
+        twinklingImage.src = isWebpSupported? TwinklingImage : TwinklingImageJpg;
 
         mountainImage.onload = function(){
             if(mountainImage.complete)
@@ -88,12 +94,12 @@ body{
 }
 .component-fade-enter-active, .component-fade-leave-active {
   transition: all 0.5s ease;
-  transition-delay: 1.5s;
+  /* transition-delay: 0.2s; */
   opacity: 1;
 }
 .component-fade-enter, .component-fade-leave-to
  {
-  opacity: 0;
+  opacity: 1;
 
 }
 </style>

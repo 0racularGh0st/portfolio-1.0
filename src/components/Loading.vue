@@ -31,7 +31,7 @@
 import anime from 'animejs/lib/anime.es.js';
 window.onload = function(){
     const anim = anime.timeline({
-  loop: true,
+  loop: false,
   direction: 'alternate',
 });
 
@@ -40,7 +40,7 @@ anim
     targets: '#hexagon path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutQuart',
-    duration: 1500,
+    duration: 500,
     delay: function(el, i) { return i * 250 },
   })
 
