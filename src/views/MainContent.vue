@@ -11,11 +11,11 @@
 </template>
 <script>
 import { defineAsyncComponent } from 'vue';
-const Background = defineAsyncComponent(() => import("../components/Background" /* webpackChunkName: "background" */));
+const Background = defineAsyncComponent(() => import("../components/Background" /* webpackChunkName: "background" */ /* webpackPreload: true */));
 const Home = defineAsyncComponent(() => import("./Home" /* webpackChunkName: "home" */));
-const Navbar = defineAsyncComponent(() => import("../components/Navbar" /* webpackChunkName: "navbar" */));
-const Social = defineAsyncComponent(()=> import("../components/Social" /* webpackChunkName: "social" */));
-const Footer = defineAsyncComponent(()=> import("../components/Footer" /* webpackChunkName: "footer" */));
+const Navbar = defineAsyncComponent(() => import("../components/Navbar" /* webpackChunkName: "navbar" */ /* webpackPreload: true */));
+const Social = defineAsyncComponent(()=> import("../components/Social" /* webpackChunkName: "social" */ /* webpackPreload: true */));
+const Footer = defineAsyncComponent(()=> import("../components/Footer" /* webpackChunkName: "footer" */ /* webpackPreload: true */));
 export default {
   data(){
     return {

@@ -3,7 +3,7 @@
     <nav class="nav">
       <a href="/"
         ><div class="mylogo">
-          <img src="../assets/mylogomain.jpg" />
+          <img src="../assets/logo60x60.png"  alt="Logo" aria-label="Logo"/>
           <div class="container">
             <svg
               id="hexagon"
