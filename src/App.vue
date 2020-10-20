@@ -17,7 +17,7 @@ const Modernizer = window.Modernizr;
    import MoonImageJpg from './assets/rsz_moon.jpg';
    import StarsImageJpg from './assets/stars.jpg';
    import TwinklingImageJpg from './assets/twinkling.jpg';
-import Loading from './components/Loading';
+   import Loading from './components/Loading';
 import MainContent from './views/MainContent';
 import './views/fonts.css';
 export default {
