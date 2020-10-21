@@ -1,22 +1,33 @@
-.content-section{
-    margin-left: 2rem;
-    margin-right: 2rem;
+section{
+    max-width: 90vw;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+@media screen and (min-width: 23.43rem){
+    section{
+        max-width: 90vw;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
 }
 @media screen and (min-width: 48rem){
-    .content-section{
-        margin-left:5.5rem ;
-        margin-right:2.5rem ;
+    section{
+        max-width: 80vw;
+        margin-left:auto ;
+        margin-right:auto ;
     }
 }
 @media screen and (min-width: 64rem){
-    .content-section{
-        margin-left:3.5rem ;
-        margin-right:3.5rem ;
+    section{
+        max-width: 75vw;
+        margin-left:auto ;
+        margin-right:auto ;
     }
 }
 @media screen and (min-width: 85.5rem){
-    .content-section{
-        margin-left:6rem ;
-        margin-right:6rem ;
+    section{
+        max-width: 75vw;
+        margin-left:auto ;
+        margin-right:auto ;
     }
 }
