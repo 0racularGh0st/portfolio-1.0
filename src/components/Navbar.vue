@@ -243,7 +243,7 @@ export default {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   align-items: center;
 }

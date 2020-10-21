@@ -1,5 +1,5 @@
 <template>
-  <section class="about content-section">
+  <section id="about" class="about content-section">
     <div>Normal Div</div>
     <h1>This is H1 </h1>
     <h2>This is H2</h2>
