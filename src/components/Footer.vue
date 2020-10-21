@@ -1,8 +1,8 @@
 <template>
     <div class="footer">
-        <div class="other-text">Designed and Built</div>
-        <div class="other-text"> by </div>
-        <div class="name">Nigel David Tariang</div>
+        <p class="other-text">Designed and Built</p>
+        <p class="other-text"> by </p>
+        <p class="name">Nigel David Tariang</p>
     </div>
 </template>
 <script>
@@ -17,14 +17,12 @@ export default {
     font-family: 'Comfortaa';
     line-height: 1rem;
     margin-bottom: 2rem;
-    font-size: 0.7rem;
+    line-height: 0.4rem;
 }
 .other-text{
      color: #cee8f5;
-     
 }
 .name{
-   
     color: rgb(106, 228, 230);
 }
 </style>
