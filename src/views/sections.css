@@ -1,0 +1,22 @@
+.content-section{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+@media screen and (min-width: 48rem){
+    .content-section{
+        margin-left:5.5rem ;
+        margin-right:2.5rem ;
+    }
+}
+@media screen and (min-width: 64rem){
+    .content-section{
+        margin-left:3.5rem ;
+        margin-right:3.5rem ;
+    }
+}
+@media screen and (min-width: 85.5rem){
+    .content-section{
+        margin-left:6rem ;
+        margin-right:6rem ;
+    }
+}

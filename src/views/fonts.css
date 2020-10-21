@@ -1,9 +1,30 @@
+
 h1{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     letter-spacing: 1.3px;
     font-family: 'Comfortaa';
 }
-@media (min-width: 320px)
+h2{
+    font-size: 0.85rem;
+    letter-spacing: 1.3px;
+    font-family: 'Comfortaa';
+}
+h3{
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    font-family: 'Comfortaa';
+}
+h4{
+    font-size: 0.75rem;
+    letter-spacing: 1.3px;
+    font-family: 'Comfortaa';
+}
+p{
+    font-size: 0.75rem;
+    letter-spacing: 1.3px;
+    font-family: 'Comfortaa';
+}
+@media screen and (min-width: 20rem)
 {
     h1{
         font-size: 0.9em;
@@ -11,23 +32,139 @@ h1{
         font-family: 'Comfortaa';
 
     }
-
+    h2{
+        font-size: 0.85rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h3{
+        font-size: 0.8rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h4{
+        font-size: 0.75rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    p{
+        font-size: 0.75rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
 }
-@media (min-width: 375px)
+@media screen and (min-width: 23.43rem)
 {
     h1{
-        font-size: 1em;
+        font-size: 1rem;
         letter-spacing: 1.3px;
         font-family: 'Comfortaa';
 
     }
+    h2{
+        font-size: 0.95rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h3{
+        font-size: 0.9rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h4{
+        font-size: 0.88rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    p{
+        font-size: 0.85rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
 }
-@media (min-width: 1024px)
+@media screen and (min-width: 48rem){
+    h1{
+        font-size: 1.6rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+
+    }
+    h2{
+        font-size: 1.4rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h3{
+        font-size: 1.25rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    h4{
+        font-size: 1.05rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+    p{
+        font-size: 0.95rem;
+        letter-spacing: 1.3px;
+        font-family: 'Comfortaa';
+    }
+}
+@media screen and (min-width: 64rem)
 {
     h1{
-        font-size: 1.7em;
+        font-size: 1.8rem;
         letter-spacing: 2.3px;
         font-family: 'Comfortaa';
 
+    }
+    h2{
+        font-size: 1.6rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    h3{
+        font-size: 1.43rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    h4{
+        font-size: 1.25rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    p{
+        font-size: 1.05rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+}
+@media screen and (min-width: 85.5rem)
+{
+    h1{
+        font-size: 2rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+
+    }
+    h2{
+        font-size: 1.8rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    h3{
+        font-size: 1.6rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    h4{
+        font-size: 1.4rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
+    }
+    p{
+        font-size: 1.2rem;
+        letter-spacing: 2.3px;
+        font-family: 'Comfortaa';
     }
 }
