@@ -12,10 +12,10 @@
 <script>
 import { defineAsyncComponent } from 'vue';
 const Background = defineAsyncComponent(() => import("../components/Background" /* webpackChunkName: "background" */ /* webpackPreload: true */));
-const Home = defineAsyncComponent(() => import("./Home" /* webpackChunkName: "home" */));
 const Navbar = defineAsyncComponent(() => import("../components/Navbar" /* webpackChunkName: "navbar" */ /* webpackPreload: true */));
 const Social = defineAsyncComponent(()=> import("../components/Social" /* webpackChunkName: "social" */ /* webpackPreload: true */));
 const Footer = defineAsyncComponent(()=> import("../components/Footer" /* webpackChunkName: "footer" */ /* webpackPreload: true */));
+const Home = defineAsyncComponent(() => import("./Home" /* webpackChunkName: "home" */));
 export default {
   data(){
     return {

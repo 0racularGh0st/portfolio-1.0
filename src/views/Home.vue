@@ -1,11 +1,14 @@
 <template>
-  <div class="home">
+  <div>
+    <div class="home">
     <h1 class="content">
       <div id="line-typing" class="line-typing">
         
       </div>
       
     </h1>
+  </div>
+  <about/>
   </div>
 </template>
 
@@ -25,6 +28,7 @@ const startType = ()=>{
           if(index!==text.length)
           setTimeout(startType,70);
 }
+import About from './About';
 export default {
     data(){
       return {
@@ -33,26 +37,14 @@ export default {
         letter : ''
       }
     },
-    mounted(){
-      
-      
-           //setTimeout(()=>{startType()},2000);
-    },
-    methods: {
-      // startType : function(){
-          
-      //     let self = this;
-      //     self.letter = self.text.slice(0,++self.index);
-      //     document.querySelector('.line-typing').textContent = self.letter;
-      //     if(self.index!==self.text.length)
-      //     setTimeout(this.startType,70);
-      // }
-    }
+   components:{
+     About
+   }
 }
 </script>
 <style scoped>
 .home{
-  height: 150vh;
+  height: 110vh;
 }
 .content{
   margin-top: 50vh;
