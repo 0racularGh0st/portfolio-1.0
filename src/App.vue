@@ -93,13 +93,13 @@ body{
   background: black;
 }
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: all 1s ease;
-  /* transition-delay: 0.7s; */
+  transition: all .3s ease;
+  transition-delay: 1s; 
   opacity: 1;
 }
 .component-fade-enter, .component-fade-leave-to
  {
-  opacity: 1;
+  opacity: 0;
 
 }
 </style>

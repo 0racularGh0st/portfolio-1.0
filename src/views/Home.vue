@@ -28,7 +28,8 @@ const startType = ()=>{
           if(index!==text.length)
           setTimeout(startType,70);
 }
-import About from './About';
+import { defineAsyncComponent } from 'vue';
+const About = defineAsyncComponent(() => import("./About" /* webpackChunkName: "about" */));
 export default {
     data(){
       return {
@@ -38,7 +39,7 @@ export default {
       }
     },
    components:{
-     About
+     'about':About
    }
 }
 </script>
