@@ -12,12 +12,14 @@ export default {
 </script>
 <style  scoped>
 .footer{
-        position: relative;
+    position: relative;
     text-align: center;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
     line-height: 1rem;
     margin-bottom: 2rem;
     font-size: 12px;
+    letter-spacing: 1.3px;
+    margin-top: 2rem;
 }
 .other-text{
      color: #cee8f5;

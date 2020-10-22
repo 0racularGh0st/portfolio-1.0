@@ -45,7 +45,7 @@ export default {
 </script>
 <style scoped>
 .home{
-  height: 100vh;
+  height: 50vh;
 }
 .content{
   margin-top: 50vh;

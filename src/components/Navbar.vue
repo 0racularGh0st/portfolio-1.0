@@ -191,7 +191,7 @@ export default {
   height: 64px;
   display: flex;
   justify-content: space-between;
-  font-family: "Comfortaa";
+  font-family: "Work sans";
   text-transform: uppercase;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
@@ -254,7 +254,7 @@ export default {
   height: 23px;
   width: 23px;
   margin-right: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
   transform: scale(0.65);
 }
 @media (min-width: 320px) {

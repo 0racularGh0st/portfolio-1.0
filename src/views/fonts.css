@@ -2,55 +2,57 @@
 h1{
     font-size: 0.9rem;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
 }
 h2{
     font-size: 0.85rem;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
 }
 h3{
     font-size: 0.8rem;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
 }
 h4{
     font-size: 0.75rem;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
 }
 p{
     font-size: 0.75rem;
     letter-spacing: 1.3px;
-    font-family: 'Comfortaa';
+    font-family: 'Work sans';
+    line-height: 1rem;
 }
 @media screen and (min-width: 20rem)
 {
     h1{
         font-size: 0.9em;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
 
     }
     h2{
         font-size: 0.85rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h3{
         font-size: 0.8rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h4{
         font-size: 0.75rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     p{
         font-size: 0.75rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
+        line-height: 1rem;
     }
 }
 @media screen and (min-width: 23.43rem)
@@ -58,55 +60,57 @@ p{
     h1{
         font-size: 1rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
 
     }
     h2{
         font-size: 0.95rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h3{
         font-size: 0.9rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h4{
         font-size: 0.88rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     p{
         font-size: 0.75rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
+        line-height: 1.2rem;
     }
 }
 @media screen and (min-width: 48rem) and (orientation: portrait){
     h1{
         font-size: 1.6rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h2{
         font-size: 1.4rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h3{
         font-size: 1.25rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h4{
         font-size: 1.05rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     p{
         font-size: 0.8rem;
         letter-spacing: 1.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
+        line-height: 1.4rem;
     }
 }
 @media screen and (min-width: 64rem)
@@ -114,28 +118,29 @@ p{
     h1{
         font-size: 1.8rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
 
     }
     h2{
         font-size: 1.6rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h3{
         font-size: 1.43rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h4{
         font-size: 1.25rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     p{
         font-size: 0.9rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
+        line-height: 1.5rem;
     }
 }
 @media screen and (min-width: 85.5rem)
@@ -143,27 +148,28 @@ p{
     h1{
         font-size: 2rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
 
     }
     h2{
         font-size: 1.8rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h3{
         font-size: 1.6rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     h4{
         font-size: 1.4rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
     }
     p{
         font-size: 1rem;
         letter-spacing: 2.3px;
-        font-family: 'Comfortaa';
+        font-family: 'Work sans';
+        line-height: 1.6rem;
     }
 }
