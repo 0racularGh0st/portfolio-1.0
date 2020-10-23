@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about">
+  <section id="about" class="about-main-section">
     <div class="section-name">
         <h1 class="section-name-text">About Me</h1>
         <div class="horizontal-gradient-line"/>
@@ -21,7 +21,7 @@ export default {
 }
 </script>
 <style scoped>
-.about{
+.about-main-section{
   color : #cee8f5;
 }
 .section-details-container{
