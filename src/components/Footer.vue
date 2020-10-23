@@ -14,7 +14,7 @@ export default {
 .footer{
     position: relative;
     text-align: center;
-    font-family: 'Work sans';
+    font-family: 'Work sans-light';
     line-height: 1rem;
     margin-bottom: 2rem;
     font-size: 12px;

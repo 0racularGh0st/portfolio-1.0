@@ -22,7 +22,7 @@ h4{
 p{
     font-size: 0.75rem;
     letter-spacing: 1.3px;
-    font-family: 'Work sans';
+    font-family: 'Work sans-light';
     line-height: 1rem;
 }
 @media screen and (min-width: 20rem)
@@ -51,7 +51,7 @@ p{
     p{
         font-size: 0.75rem;
         letter-spacing: 1.3px;
-        font-family: 'Work sans';
+        font-family: 'Work sans-light';
         line-height: 1rem;
     }
 }
@@ -81,7 +81,7 @@ p{
     p{
         font-size: 0.75rem;
         letter-spacing: 1.3px;
-        font-family: 'Work sans';
+        font-family: 'Work sans-light';
         line-height: 1.2rem;
     }
 }
@@ -109,7 +109,7 @@ p{
     p{
         font-size: 0.8rem;
         letter-spacing: 1.3px;
-        font-family: 'Work sans';
+        font-family: 'Work sans-light';
         line-height: 1.4rem;
     }
 }
@@ -139,7 +139,7 @@ p{
     p{
         font-size: 0.9rem;
         letter-spacing: 2.3px;
-        font-family: 'Work sans';
+        font-family: 'Work sans-light';
         line-height: 1.5rem;
     }
 }
@@ -169,7 +169,7 @@ p{
     p{
         font-size: 1rem;
         letter-spacing: 2.3px;
-        font-family: 'Work sans';
+        font-family: 'Work sans-light';
         line-height: 1.6rem;
     }
 }

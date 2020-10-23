@@ -208,6 +208,7 @@ export default {
   display: flex;
   justify-content: space-around;
   width: 45%;
+  font-family: 'Work Sans-light';
 }
 .nav-links li:hover{
   color: rgb(106, 228, 230);
@@ -310,6 +311,7 @@ export default {
       rgb(5 8 12) 52%,
       transparent 100%
     );
+    font-family: 'Work Sans-light';
   
     box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   }
