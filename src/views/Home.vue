@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="home">
-    <h1 class="content">
+    <section>
+      <h1 class="content">
       <div id="line-typing" class="line-typing">
         
       </div>
       
     </h1>
+    </section>
   </div>
   <about/>
   </div>
@@ -97,9 +99,9 @@ export default {
 }
 .content{
   margin-top: 50vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  width: 31ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 .line-typing{
     color:#cee8f5;
