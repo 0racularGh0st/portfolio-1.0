@@ -19,7 +19,7 @@ export default {
     margin-bottom: 2rem;
     font-size: 12px;
     letter-spacing: 1.3px;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .other-text{
      color: #cee8f5;

@@ -41,6 +41,7 @@ export default {
    components:{
      'about':About
    }
+   
 }
 </script>
 <style scoped>

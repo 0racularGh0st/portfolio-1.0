@@ -44,6 +44,7 @@ export default {
         margin-bottom: 2rem;
         width: 100%;
         align-items: center;
+        margin-top: 2rem;
     }
     .vertical-line1{
             background: linear-gradient(-45deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 50%, transparent 100%);
