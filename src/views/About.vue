@@ -31,11 +31,10 @@ export default {
       let options = {
   root: document.querySelector('main-app'),
   rootMargin: '0px',
-  threshold: 0.1
+  threshold: 0.3
 }
  const subSection = document.querySelector(".about-main-section");
         let observer = new IntersectionObserver((entry) => {
-          console.log(entry);
             if(entry[0].isIntersecting)
             {
               subSection.classList.add("sub-section-show");

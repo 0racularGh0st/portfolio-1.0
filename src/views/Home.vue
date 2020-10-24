@@ -18,15 +18,62 @@ window.addEventListener("load", function() {
   setTimeout(startType,3000);
 });
 let index=0;
-const text = "Hi, I'm Nigel. FullStack Developer."
+const mainText= "Hi, I'm Nigel. ";
+const texts = ["FullStack Developer.","DevOps Engineer."]
 let letter='';
+let mainTextDone = false;
+let count = 0;
+let currentText = "";
+let direction="forward";
+let prevDirection="forward";
 const startType = ()=>{
           if(document.querySelector('.line-typing')){
-            letter = text.slice(0,++index);
-          document.querySelector('.line-typing').textContent = letter;
+            if(index<=mainText.length && !mainTextDone){
+              letter = mainText.slice(0,++index);
+              document.querySelector('.line-typing').textContent = letter;
+                if(index > mainText.length)
+                {
+                  mainTextDone = true;
+                  index = 0;
+                }
+            }
+            else{
+               if(count === texts.length)
+               {
+                 count = 0;
+               }
+
+               currentText = texts[count];
+               if(direction === "forward"){
+                 letter = currentText.slice(0,++index);
+               document.querySelector('.line-typing').textContent = mainText+letter;
+               if(letter.length === currentText.length)
+               {
+                 direction= "backward"
+                //  count++;
+                //  index = 0;
+               }
+               }
+               if(direction === "backward"){
+                 letter = currentText.slice(0,index--);
+               document.querySelector('.line-typing').textContent = mainText+letter;
+               if(letter.length === 0)
+               {
+                 direction= "forward"
+                 count++;
+                 index = 0;
+               }
+               }
+
+            }
           }
-          if(index!==text.length)
-          setTimeout(startType,70);
+          // if(index!==text.length)
+          if(prevDirection === direction)
+          {setTimeout(startType,70);}
+          else{
+            prevDirection = direction;
+            setTimeout(startType,1000);
+          }
 }
 import { defineAsyncComponent } from 'vue';
 const About = defineAsyncComponent(() => import("./About" /* webpackChunkName: "about" */));
