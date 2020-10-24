@@ -74,7 +74,11 @@ const startType = ()=>{
           {setTimeout(startType,70);}
           else{
             prevDirection = direction;
-            setTimeout(startType,1000);
+            if(prevDirection === "forward")
+            setTimeout(startType,500);
+            else{
+              setTimeout(startType,2000);
+            }
           }
 }
 import { defineAsyncComponent } from 'vue';
