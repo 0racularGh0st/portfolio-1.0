@@ -1,21 +1,22 @@
 
-h1{
+ h1{
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+    font-family: 'Work sans';
+
+}
+h2{
     font-size: 0.9rem;
     letter-spacing: 1.3px;
     font-family: 'Work sans';
 }
-h2{
+h3{
     font-size: 0.85rem;
     letter-spacing: 1.3px;
     font-family: 'Work sans';
 }
-h3{
-    font-size: 0.8rem;
-    letter-spacing: 1.3px;
-    font-family: 'Work sans';
-}
 h4{
-    font-size: 0.75rem;
+    font-size: 0.83rem;
     letter-spacing: 1.3px;
     font-family: 'Work sans';
 }
@@ -28,23 +29,23 @@ p{
 @media screen and (min-width: 20rem)
 {
     h1{
-        font-size: 0.9em;
+        font-size: 1rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
 
     }
     h2{
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
     }
     h3{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
     }
     h4{
-        font-size: 0.75rem;
+        font-size: 0.83rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
     }
@@ -58,13 +59,13 @@ p{
 @media screen and (min-width: 23.43rem)
 {
     h1{
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
 
     }
     h2{
-        font-size: 0.95rem;
+        font-size: 1rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
     }
@@ -79,7 +80,7 @@ p{
         font-family: 'Work sans';
     }
     p{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
         line-height: 1.2rem;
@@ -102,12 +103,12 @@ p{
         font-family: 'Work sans';
     }
     h4{
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
     }
     p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         letter-spacing: 1.3px;
         font-family: 'Work sans';
         line-height: 1.4rem;
@@ -137,7 +138,7 @@ p{
         font-family: 'Work sans';
     }
     p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         letter-spacing: 2.3px;
         font-family: 'Work sans';
         line-height: 1.5rem;
