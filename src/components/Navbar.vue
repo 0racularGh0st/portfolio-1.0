@@ -42,7 +42,7 @@
       </a>
       <ul class="nav-links">
         <li>
-          <a href="javascript:;" v-on:click="smoothScroll('.about-main-section',1500)"
+          <a href="javascript:;" v-on:click="smoothScroll('.about-main-section',1000)"
             ><svg width="23" height="23" fill="url(#grad1)">
               <path
                 d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
@@ -51,7 +51,7 @@
           >
         </li>
         <li>
-          <a href="javascript:;"
+          <a href="javascript:;" v-on:click="smoothScroll('.skills-main-section',1000)"
             ><svg width="23" height="23" fill="url(#grad1)">
               <path
                 d="M21.49,4.73,17,2.17a1,1,0,0,0-1,0L12,4.45,8,2.17a1,1,0,0,0-1,0L2.51,4.73A1,1,0,0,0,2,5.6v5.12a1,1,0,0,0,.51.87l4,2.27V18.4a1,1,0,0,0,.51.87l4.5,2.56a1,1,0,0,0,1,0L17,19.27a1,1,0,0,0,.51-.87V13.86l4-2.27a1,1,0,0,0,.51-.87V5.6A1,1,0,0,0,21.49,4.73ZM4,10.14v-4l3.5-2,3.5,2v4l-3.5,2Zm11.5,7.68-3.5,2-3.5-2v-4l3.5-2,3.5,2ZM20,10.14l-3.5,2-3.5-2v-4l3.5-2,3.5,2Z"
@@ -164,7 +164,7 @@ export default {
   methods: {
     smoothScroll: function(target,duration){
       target = document.querySelector(target);
-      var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      var targetPosition = target.getBoundingClientRect().top + window.pageYOffset -64;
       var startPosition = window.pageYOffset;
       var distance = targetPosition - startPosition;
       var startTime = null;
