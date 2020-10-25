@@ -1,9 +1,16 @@
-.horizontal-gradient-line{
+.horizontal-gradient-line-to-right{
             background: linear-gradient(45deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 50%, transparent 100%);
             height: 1px;
             width: 50%;
             opacity: 0.8;
             margin-top: 3px;
+}
+.horizontal-gradient-line-to-left{
+    background: linear-gradient(-45deg, rgb(62, 110, 173) 0%,rgb(106, 228, 230) 50%, transparent 100%);
+    height: 1px;
+    width: 50%;
+    opacity: 0.8;
+    margin-top: 3px;
 }
 .highlight-text{
     color: rgb(106, 228, 230);

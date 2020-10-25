@@ -1,8 +1,8 @@
 <template>
   <section id="about" class="about-main-section">
     <div class="section-name">
-        <h1 class="section-name-text">About Me</h1>
-        <div class="horizontal-gradient-line"/>
+        <h1 class="section-name-text-left">About Me</h1>
+        <div class="horizontal-gradient-line-to-right"/>
     </div>
     <div class="section-details-container">
         <p>Hello! I'm <a href="javascript:;" class="highlight-text">Nigel David</a>, a Fullstack Developer from Shillong, Meghalaya - India.</p>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import './sections.css';
+import './sections.scss';
 import './css-styled-components.scss';
 
 export default {
@@ -49,6 +49,7 @@ export default {
 <style scoped>
 .about-main-section{
   color : #cee8f5;
+  margin-bottom: 5rem;
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
   opacity: 0;
   transform: translateY(3rem);

@@ -11,6 +11,7 @@
     </section>
   </div>
   <about/>
+  <skills/>
   </div>
 </template>
 
@@ -83,6 +84,8 @@ const startType = ()=>{
 }
 import { defineAsyncComponent } from 'vue';
 const About = defineAsyncComponent(() => import("./About" /* webpackChunkName: "about" */));
+const Skills = defineAsyncComponent(() => import("./Skills" /* webpackChunkName: "skills" */));
+
 export default {
     data(){
       return {
@@ -92,7 +95,8 @@ export default {
       }
     },
    components:{
-     'about':About
+     'about':About,
+     'skills': Skills
    }
    
 }

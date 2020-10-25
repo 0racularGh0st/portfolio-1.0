@@ -19,6 +19,9 @@ section{
     .section-details-container{
         max-width: 100%;
     }
+    .section-name{
+        max-width: calc(100% + 3rem);
+    }
 }
 @media screen and (min-width: 48rem){
     section{
@@ -28,6 +31,9 @@ section{
     }
     .section-details-container{
         max-width: 80%;
+    }
+    .section-name{
+        max-width: calc(80% + 3rem);
     }
 }
 @media screen and (min-width: 64rem){
@@ -39,6 +45,9 @@ section{
     .section-details-container{
         max-width: 80%;
     }
+    .section-name{
+        max-width: calc(80% + 3rem);
+    }
 }
 @media screen and (min-width: 85.5rem){
     section{
@@ -49,15 +58,22 @@ section{
     .section-details-container{
         max-width: 70%;
     }
+    .section-name{
+        max-width: calc(70% + 3rem);
+    }
 }
 .section-name{
     display: flex;
     align-items: center;
+    &.right{
+        justify-content: flex-end;
+    }
 }
-.section-name-text{
+.section-name-text-left{
     margin-right: 0.5rem;
     font-weight: bold;
 }
-.section-detail{
-    
+.section-name-text-right{
+    margin-left: 0.5rem;
+    font-weight: bold;
 }
