@@ -5,7 +5,45 @@
         <h1 class="section-name-text-right">Skills</h1>
     </div>
     <div class="section-details-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus officiis dolorem! Obcaecati, praesentium eaque! Accusamus quam incidunt architecto quo quae perspiciatis molestiae accusantium, cum nostrum amet quis eaque quaerat!</p>
+        <h3>Here are some of the things I've worked with:</h3>
+        <h3 class="section-details-heading">Languages I Speak</h3>
+            <div>
+                <p>Javascript, C, C++, Java</p>
+            </div>
+        <h3 class="section-details-heading">Runtime Environment</h3>
+            <div>
+                <p>
+                    NodeJS
+                </p>
+            </div>
+        <h3 class="section-details-heading">Backend Framework</h3>
+        <div>
+            <p>
+                ExpressJS
+            </p>
+        </div>
+
+        <h3 class="section-details-heading">Frontend Frameworks</h3>
+        <div>
+            <p>
+                Vue, React, ElectronJS 
+            </p>
+        </div>
+        <h3 class="section-details-heading">Web Technologies</h3>
+        <div>
+            <p>
+                HTML, CSS, SCSS
+            </p>
+        </div>
+        <h3 class="section-details-heading">Databases</h3>
+        <div>
+            <p>
+                SQL: MySql
+            </p>
+            <p>
+                NoSQL: MongoDB, NEDB
+            </p>
+        </div>
     </div>
    </section>
   
