@@ -11,6 +11,87 @@
     <div class="star"></div>
      <div class="star"></div>
      <div id="moon" class= "moon"></div>
+     <Particles
+      id="tsparticles"
+      :options="{
+            background: {
+                color: {
+                    value: 'transparent'
+                }
+            },
+            fpsLimit: 60,
+            interactivity: {
+                detectsOn: 'canvas',
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    resize: true
+                },
+                modes: {
+                    bubble: {
+                        distance: 200,
+                        duration: 2,
+                        opacity: 0.8,
+                        size: 40
+                    },
+                    push: {
+                        quantity: 4
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    }
+                }
+            },
+            particles: {
+                color: {
+                    value: '#ffffff'
+                },
+                links: {
+                    color: '#ffffff',
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.5,
+                    width: 1
+                },
+                collisions: {
+                    enable: true
+                },
+                move: {
+                    direction: 'none',
+                    enable: true,
+                    outMode: 'bounce',
+                    random: false,
+                    speed: 6,
+                    straight: false
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    },
+                    value: 80
+                },
+                opacity: {
+                    value: 0.5
+                },
+                shape: {
+                    type: 'circle'
+                },
+                size: {
+                    random: true,
+                    value: 5
+                }
+            },
+            detectRetina: true
+        }"
+    />
   </div>
 </template>
 <script>
@@ -112,7 +193,7 @@ body{
 .webp .moon{
     background: url(../assets/rsz_moon.webp) top right transparent;
     background-repeat: no-repeat;
-    z-index: 5;
+    z-index: 6;
     background-size: 10rem;
     background-position-y: 30%;
     background-position-x: 90%;
@@ -123,7 +204,7 @@ body{
 .no-webp .moon{
     background:url(../assets/rsz_moon.jpg) top right transparent;
     background-repeat: no-repeat;
-    z-index: 5;
+    z-index: 6;
     background-size: 10rem;
     background-position-y: 30%;
     background-position-x: 90%;
@@ -260,5 +341,16 @@ body{
   100% {
     transform: translateX(320px) rotate(-15deg) translateY(-65px);
   }
+}
+#tsparticles{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  position: absolute;
+  z-index: 5;
 }
 </style>
