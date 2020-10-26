@@ -14,6 +14,7 @@ export default {
 <style lang="scss" scoped>
 .outer-skill-card-wrapper{
     display: inline-block;
+    opacity: 0.9;
 }
 .skill-card-wrapper{
     display: flex;
@@ -22,22 +23,23 @@ export default {
     border-radius: 10px;
     justify-content: space-between;
     border: 1px solid #cee8f5;
-    width: 90px;
+    width: 96px;
     box-shadow: 0px 7px 14px -1px #3d5d86;
     margin: 0.5rem 0.25rem;
 }
 .skill-card-wrapper{
     p{
-        margin-bottom: 0;
-        margin-top: 5px;
-        background: #cee8f5;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        padding: 5px;
-        font-size: 12px;
-        position: relative;
-        width: 80px;
-        text-align: center;
+    font-family: 'Work Sans-Bold';
+    margin-bottom: -1px;
+    margin-top: 5px;
+    background: #cee8f5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+    font-size: 12px;
+    position: relative;
+    width: 82px;
+    text-align: center;
     }
     .text{
         color:black;
