@@ -8,77 +8,37 @@
         <p>Here are some of the things I've worked with:</p>
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Languages I Speak</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                <div class="skill-wrapper">
-                    <img src="../assets/javascript.png" height="40" aria-label="javascript" alt="javascript"/>
-                    <p>Javascript</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/c.png" height="40" aria-label="C" alt="C"/>
-                    <p>C</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/c++.png" height="40" aria-label="C++" alt="C++"/>
-                    <p>C</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/java.png" height="40" aria-label="Java" alt="Java"/>
-                    <p>Java</p>
-                </div>
+                <skill-card imgSrc="assets/javascript.png" imgLabel="Javascript" imgHeight="40"/>
+                <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40"/>
+                <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40"/>
+                <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40"/>
             </div>
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Frontend Frameworks</h4><span class="right-line"></span></div>
         <div class="skills-icons">
-             <div class="skill-wrapper">
-                    <img src="../assets/vue.png" height="40" aria-label="VueJS" alt="VueJS"/>
-                    <p>VueJS</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/electron.png" height="40" aria-label="ElectronJS" alt="ElectronJS"/>
-                    <p>ElectronJS</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/react.png" height="40" aria-label="ReactJS" alt="ReactJS"/>
-                    <p>ReactJS</p>
-                </div>
+                <skill-card imgSrc="assets/vue.png" imgLabel="Vue" imgHeight="40"/>
+                <skill-card imgSrc="assets/electron.png" imgLabel="ElectronJS" imgHeight="40"/>
+                <skill-card imgSrc="assets/react.png" imgLabel="ReactJS" imgHeight="40"/>
+
             </div>  
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Runtime Environment</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                <div class="skill-wrapper">
-                    <img src="../assets/node2.png" height="60" aria-label="node" alt="node"/>
-                    <p>NodeJS</p>
-                </div>
+                <skill-card imgSrc="assets/node2.png" imgLabel="NodeJS" imgHeight="40"/>
             </div>    
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Backend Framework</h4><span class="right-line"></span></div>
        <div class="skills-icons">
-                <div class="skill-wrapper">
-                    <img src="../assets/express.png" height="50" aria-label="express" alt="express" class="expressjs"/>
-                    <p>ExpressJS</p>
-                </div>
+                <skill-card imgSrc="assets/express.png" imgLabel="ExpressJS" imgHeight="40" imgClass="expressjs"/>
             </div>   
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Web Technologies</h4><span class="right-line"></span></div>
         <div class="skills-icons">
-                <div class="skill-wrapper">
-                    <img src="../assets/html.png" height="40" aria-label="HTML" alt="HTML"/>
-                    <p>HTML</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/css3.png" height="40" aria-label="CSS" alt="CSS"/>
-                    <p>CSS3</p>
-                </div>
-                <div class="skill-wrapper">
-                    <img src="../assets/sass.png" height="40" aria-label="Sass" alt="Sass"/>
-                    <p>SCSS</p>
-                </div>
+                <skill-card imgSrc="assets/html.png" imgLabel="HTML" imgHeight="40"/>
+                <skill-card imgSrc="assets/css3.png" imgLabel="CSS3" imgHeight="40"/>
+                <skill-card imgSrc="assets/sass.png" imgLabel="SCSS" imgHeight="40"/>
+
             </div>  
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Databases</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                <div class="skill-wrapper">
-                    <img src="../assets/mysql.png" height="40" aria-label="MySql" alt="MySql"/>
-                    <p>MySql</p>
-                </div>
-               <div class="skill-wrapper">
-                    <img src="../assets/mongodb.png" height="40" aria-label="MongoDB" alt="MongoDB"/>
-                    <p>MongoDB</p>
-                </div>
+                 <skill-card imgSrc="assets/mysql.png" imgLabel="MySql" imgHeight="40"/>
+                 <skill-card imgSrc="assets/mongodb.png" imgLabel="MongoDB" imgHeight="40"/>
             </div>  
     </div>
    </section>
@@ -88,10 +48,14 @@
 <script>
 import './sections.scss';
 import './css-styled-components.scss';
-
+import SkillCard from "../components/SkillCard";
 export default {
+
   mounted(){
     this.observeMethod();
+  },
+  components:{
+        'skill-card' : SkillCard
   },
   methods: {
     observeMethod: function(){
@@ -130,22 +94,11 @@ export default {
   color: #bec2d2;
 }
 .skills-icons{
-    display: flex;
-    justify-content: center;
+   display: inline-block;
     opacity: 0.8;
-}
-.skill-wrapper{
-display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5rem;
-   p{
-       margin-top: 0.5rem;
-   }
-}
-.expressjs{
-    background: #cee8f5;
-    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 .left-line{
         background:linear-gradient(-45deg, rgb(83, 75, 75) 0%, transparent 100%);
