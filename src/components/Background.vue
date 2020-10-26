@@ -5,7 +5,6 @@
       <div class="twinkling"></div> 
     </div>
     </div>
-    <div id="mountain" class="mountain" v-bind:style="mountainStyles"></div>
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
@@ -15,39 +14,15 @@
   </div>
 </template>
 <script>
-// const Modernizer = window.Modernizr;
-import MountainImage from '../assets/mountain.webp';
-import MountainImageJpg from '../assets/mountain.jpg';
-let mountainImage= MountainImage;
 export default {
   data(){
     return{
       moon: '',
-      mountain: '',
       background: '',
       viewportDiff: ''
     }
   },
-  created(){
-    mountainImage = window.Modernizr.webp? MountainImage : MountainImageJpg;
-  },
   computed: {
-    mountainStyles: function(){
-      return {
-        background: "transparent url("+mountainImage+") no-repeat",
-        zIndex: 6,
-        width: "100%",
-        filter: "brightness(0.7)",
-        backgroundPositionY: "60%",
-        height: "60%",
-        top: "40%",
-        backgroundSize: "cover",
-        transform: "translate3d(0px, 0px, 0px)",
-        "-webkit-transform": "translate3d(0px, 0px, 0px)",
-        transition: "all 0s ease",
-        backfaceVisibility: "hidden"
-      }
-    },
     backgroundHeight: function(){
       return {
          height: "calc(100vh + "+this.viewportDiff+"px)",
@@ -67,26 +42,12 @@ export default {
   mounted(){
      this.viewportDiff = document.documentElement.clientHeight - window.innerHeight;
     this.moon = document.getElementById('moon');
-    this.mountain = document.getElementById('mountain');
     this.moon.style.left = '0px';
     this.moon.style.top = '0px';
-   // this.mountain.style.top = '40%';  
-    this.mountain.style.filter = 'brightness(0.7)';
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
         this.moon.style.left= (value/2)+'px';
         this.moon.style.top=-(value/3)+'px';
-      //  this.mountain.style.top = (value/5)<40? '40%' : (value/5)+'%';
-       // this.mountain.style.filter = (1/(1+(value/300)))>0.7 ? 'brightness(0.7)' : 'brightness('+(1/(1+(value/300)))+')';
-       if((1/(1+(value/300)))>0.7){
-            this.mountain.style.filter = 'brightness(0.7)';
-       }
-       else if((1/(1+(value/300)))<0.33){
-         this.mountain.style.filter = 'brightness(0.33)';
-       }
-       else{
-         this.mountain.style.filter =  'brightness('+(1/(1+(value/300)))+')';
-       }
     });
   }
 }
@@ -107,7 +68,7 @@ body{
     to {background-position:-10000px 5000px;}
 }
 
-.mountain, .moon{
+.moon{
   position:absolute;
   top:0;
   left:0;
