@@ -16,6 +16,7 @@
     <div class="star"></div>
     <div id="moon" class="moon"></div>
     <Particles
+      v-if="particle_ready"
       id="tsparticles"
       :options="{
         background: {
@@ -32,7 +33,7 @@
               mode: 'push',
             },
             onHover: {
-              enable: true,
+              enable: particle_hover,
               mode: 'grab',
             },
             resize: true,
@@ -52,7 +53,7 @@
           },
           links: {
             color: '#ffffff',
-            distance: 150,
+            distance: particle_link_distance,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -73,7 +74,7 @@
               enable: false,
               value_area: 0,
             },
-            value: 40,
+            value: no_of_particles,
           },
           opacity: {
             value: 0.4,
@@ -105,6 +106,10 @@ export default {
       moon: "",
       background: "",
       viewportDiff: "",
+      particle_ready: false,
+      particle_link_distance: 80,
+      no_of_particles:20,
+      particle_hover: true
     };
   },
   computed: {
@@ -133,6 +138,12 @@ export default {
       this.moon.style.left = value / 2 + "px";
       this.moon.style.top = -(value / 3) + "px";
     });
+    this.particle_link_distance = window.innerWidth>1024? 150: 120;
+    this.no_of_particles= window.innerWidth > 1024? 40: 20;
+    this.particle_hover= window.innerWidth > 1024? true: false;
+    setTimeout(()=>{
+      this.particle_ready = true;
+    },2000);
   },
 };
 </script>
