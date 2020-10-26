@@ -8,37 +8,37 @@
         <p>Here are some of the things I've worked with:</p>
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Languages I Speak</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                <skill-card imgSrc="assets/javascript.png" imgLabel="Javascript" imgHeight="40"/>
-                <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40"/>
-                <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40"/>
-                <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40"/>
+                <skill-card imgSrc="assets/javascript.png" imgLabel="Javascript" imgHeight="40" imgWidth="32.3"/>
+                <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40" imgWidth="40"/>
+                <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40" imgWidth="40"/>
+                <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40" imgWidth="40"/>
             </div>
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Frontend Frameworks</h4><span class="right-line"></span></div>
         <div class="skills-icons">
-                <skill-card imgSrc="assets/vue.png" imgLabel="Vue" imgHeight="40"/>
-                <skill-card imgSrc="assets/electron.png" imgLabel="ElectronJS" imgHeight="40"/>
-                <skill-card imgSrc="assets/react.png" imgLabel="ReactJS" imgHeight="40"/>
+                <skill-card imgSrc="assets/vue.png" imgLabel="Vue" imgHeight="40" imgWidth="46.22"/>
+                <skill-card imgSrc="assets/electron.png" imgLabel="ElectronJS" imgHeight="40" imgWidth="36.88"/>
+                <skill-card imgSrc="assets/react.png" imgLabel="ReactJS" imgHeight="40" imgWidth="40"/>
 
             </div>  
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Runtime Environment</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                <skill-card imgSrc="assets/node2.png" imgLabel="NodeJS" imgHeight="40"/>
+                <skill-card imgSrc="assets/node2.png" imgLabel="NodeJS" imgHeight="40" imgWidth="40"/>
             </div>    
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Backend Framework</h4><span class="right-line"></span></div>
        <div class="skills-icons">
-                <skill-card imgSrc="assets/express.png" imgLabel="ExpressJS" imgHeight="40" imgClass="expressjs"/>
+                <skill-card imgSrc="assets/express.png" imgLabel="ExpressJS" imgHeight="40" imgClass="expressjs" imgWidth="65.33"/>
             </div>   
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Web Technologies</h4><span class="right-line"></span></div>
         <div class="skills-icons">
-                <skill-card imgSrc="assets/html.png" imgLabel="HTML" imgHeight="40"/>
-                <skill-card imgSrc="assets/css3.png" imgLabel="CSS3" imgHeight="40"/>
-                <skill-card imgSrc="assets/sass.png" imgLabel="SCSS" imgHeight="40"/>
+                <skill-card imgSrc="assets/html.png" imgLabel="HTML" imgHeight="40" imgWidth="38.84"/>
+                <skill-card imgSrc="assets/css3.png" imgLabel="CSS3" imgHeight="40" imgWidth="40"/>
+                <skill-card imgSrc="assets/sass.png" imgLabel="SCSS" imgHeight="40" imgWidth="53.33"/>
 
             </div>  
         <div class="section-details-heading-wrapper"><span class="left-line"></span><h4 class="section-details-heading">Databases</h4><span class="right-line"></span></div>
             <div class="skills-icons">
-                 <skill-card imgSrc="assets/mysql.png" imgLabel="MySql" imgHeight="40"/>
-                 <skill-card imgSrc="assets/mongodb.png" imgLabel="MongoDB" imgHeight="40"/>
+                 <skill-card imgSrc="assets/mysql.png" imgLabel="MySql" imgHeight="40" imgWidth="40"/>
+                 <skill-card imgSrc="assets/mongodb.png" imgLabel="MongoDB" imgHeight="40" imgWidth="40"/>
             </div>  
     </div>
    </section>

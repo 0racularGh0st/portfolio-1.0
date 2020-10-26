@@ -1,14 +1,14 @@
 <template>
     <div class="outer-skill-card-wrapper">
     <div class="skill-card-wrapper">
-        <img v-bind:src="require(`@/${imgSrc}`)" v-bind:aria-label="imgLabel" v-bind:alt="imgLabel" v-bind:height="imgHeight" v-bind:class="imgClass"/>
+        <img v-bind:src="require(`@/${imgSrc}`)" v-bind:aria-label="imgLabel" v-bind:alt="imgLabel" v-bind:height="imgHeight" v-bind:class="imgClass" v-bind:width="imgWidth"/>
         <p class="text">{{imgLabel}}</p>
     </div>
     </div>
 </template>
 <script>
 export default {
-    props: ['imgSrc','imgLabel','imgHeight','imgClass']
+    props: ['imgSrc','imgLabel','imgHeight','imgClass','imgWidth']
 }
 </script>
 <style lang="scss" scoped>
