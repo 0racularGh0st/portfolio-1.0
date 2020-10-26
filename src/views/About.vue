@@ -31,7 +31,7 @@ export default {
       let options = {
   root: document.querySelector('main-app'),
   rootMargin: '0px',
-  threshold: 0.3
+  threshold: 0.1
 }
  const subSection = document.querySelector(".about-main-section");
         let observer = new IntersectionObserver((entry) => {
