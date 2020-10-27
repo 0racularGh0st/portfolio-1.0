@@ -52,7 +52,7 @@
             value: '#ffffff',
           },
           links: {
-            color: '#ffffff',
+            color: 'rgb(106, 228, 230)',
             distance: particle_link_distance,
             enable: true,
             opacity: 0.5,
@@ -66,7 +66,7 @@
             enable: true,
             outMode: 'bounce',
             random: false,
-            speed: 4,
+            speed: 3,
             straight: false,
           },
           number: {
@@ -138,8 +138,8 @@ export default {
       this.moon.style.left = value / 2 + "px";
       this.moon.style.top = -(value / 3) + "px";
     });
-    this.particle_link_distance = window.innerWidth>1024? 150: 120;
-    this.no_of_particles= window.innerWidth > 1024? 40: 20;
+    this.particle_link_distance = window.innerWidth>1024? 160: 120;
+    this.no_of_particles= window.innerWidth > 1024? 60: 30;
     this.particle_hover= window.innerWidth > 1024? true: false;
     setTimeout(()=>{
       this.particle_ready = true;
