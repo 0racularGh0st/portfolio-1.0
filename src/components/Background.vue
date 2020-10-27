@@ -18,6 +18,7 @@
     <Particles
       v-if="particle_ready"
       id="tsparticles"
+      class="tsparticles tsparticles-show"
       :options="{
         background: {
           color: {
@@ -143,7 +144,7 @@ export default {
     this.particle_hover= window.innerWidth > 1024? true: false;
     setTimeout(()=>{
       this.particle_ready = true;
-    },2000);
+    },1500);
   },
 };
 </script>
@@ -379,6 +380,14 @@ body {
   display: block;
   position: absolute;
   z-index: 5;
+  
+}
+.tsparticles{
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: 0.5;
+}
+.tsparticles-show{
   opacity: 0.7;
 }
 </style>

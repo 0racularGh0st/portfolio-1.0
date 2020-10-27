@@ -17,7 +17,7 @@ export default {
     font-family: 'Work sans-light';
     line-height: 1rem;
     margin-bottom: 2rem;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.3px;
     margin-top: 3rem;
 }
