@@ -73,8 +73,8 @@ svg {
   transform: translateY(-8%);
 }
 .logo{
-    height: 0px;
-    width: 0px;
+    height: 60px;
+    width: 60px;
     transform: translateY(7px);
     opacity: 0;
     transition: all 0.3s ease;
@@ -97,8 +97,6 @@ svg {
 }
 .logo-show{
   opacity: 1;
-  height: 60px;
-    width: 60px;
 }
 
 </style>
