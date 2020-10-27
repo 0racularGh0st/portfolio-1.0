@@ -216,6 +216,7 @@ export default {
     margin-right: auto !important;
     border-top: 1px solid #534b4b;
     padding-top: 0.5rem;
+    width: unset !important;
 }
 .social-icon-nav{
   margin: 0.25rem 0.5rem;
@@ -377,9 +378,10 @@ export default {
   }
   .nav-links li {
     list-style: none;
-    margin-left: 16px;
+    margin-left: 10%;
     opacity: 0;
     transition: all 0.5s ease;
+    width: 100%;
   }
   .nav-links svg {
   height: 23px;
