@@ -6,6 +6,11 @@
           <div id="line-typing" class="line-typing"></div>
         </h1>
         <h2 class="content-2">I build things that live on the internet.</h2>
+        <div class="button-wrapper">
+          <a href="mailto:nigel4tariang@gmail.com" aria-label="Email">
+          <div class="getintouch"><h3>Get In Touch</h3></div>
+        </a>
+        </div>
       </section>
     </div>
     <about />
@@ -35,6 +40,7 @@ const startType = () => {
       if (index > mainText.length) {
         mainTextDone = true;
         document.querySelector(".content-2").classList.add("content-2-show");
+        document.querySelector(".getintouch").classList.add("getintouch-show");
         index = 0;
       }
     } else {
@@ -100,7 +106,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .home {
   height: 50vh;
 }
@@ -154,5 +160,60 @@ export default {
 .content-2-show{
   opacity: 0.7;
   transform: translateY(0);
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    a{
+      text-decoration: none;
+    }
+}
+.getintouch{
+    transform: translateY(3rem);
+    opacity: 0;
+    padding: 1px;
+    background-color: black;
+    color: #cee8f5;
+    border: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    transition: background 1s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .5s,opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .5s;
+    &::before{
+      content: "";
+    position: absolute;
+    padding: 11px 9px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: background 1s ease;
+    background: linear-gradient(45deg, #3e6ead 0%, #6ae4e6 50%, transparent 100%);
+    }
+  h3{
+    margin: 0;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px 8px;
+    border-radius: 5px;
+    transition: background 1s ease;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+.getintouch:hover{
+   background: linear-gradient(45deg, #3e6ead 0%, #6ae4e6 50%, transparent 100%);
+  &::before{
+    background: linear-gradient(-45deg, #3e6ead 0%, #6ae4e6 50%, transparent 100%);
+    }
+  h3{
+    background: rgba(0, 0, 0, 0.85);
+  }
+}
+.getintouch-show{
+  transform: translateY(0rem);
+    opacity: 0.9;
 }
 </style>
