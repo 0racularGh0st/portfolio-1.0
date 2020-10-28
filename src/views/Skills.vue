@@ -114,4 +114,7 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
+.section-details-container{
+  padding-bottom: 3rem;
+}
 </style>
