@@ -104,6 +104,17 @@ export default {
     skills: Skills,
     projects: Projects,
   },
+  methods: {
+    copyEmail: function(){
+      var myEmail = document.createElement("textarea");
+      document.body.appendChild(myEmail);
+      myEmail.value = "nigel4tariang@gmail.com";
+      myEmail.select();
+      myEmail.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      document.body.removeChild(myEmail);
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
