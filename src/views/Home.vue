@@ -9,8 +9,12 @@
         <div class="button-wrapper">
           <a href="mailto:nigel4tariang@gmail.com" aria-label="Email">
           <div class="getintouch"><h3>Get In Touch</h3></div>
-        </a>
+          </a>
         </div>
+        <div class="copy-email" @click="copyEmail()">
+          Copy Email Address
+          <img v-if="copiedEmail" class="copied" src="../assets/checkmark.png" height="15" width="15" alt="checkmark" aria-label="checkmark">
+          </div>
       </section>
     </div>
     <about />
@@ -41,6 +45,7 @@ const startType = () => {
         mainTextDone = true;
         document.querySelector(".content-2").classList.add("content-2-show");
         document.querySelector(".getintouch").classList.add("getintouch-show");
+        document.querySelector(".copy-email").classList.add("show");
         index = 0;
       }
     } else {
@@ -97,6 +102,7 @@ export default {
       text: "Hi, I'm Nigel. FullStack Developer.",
       index: 0,
       letter: "",
+      copiedEmail: false
     };
   },
   components: {
@@ -113,6 +119,7 @@ export default {
       myEmail.setSelectionRange(0, 99999);
       document.execCommand("copy");
       document.body.removeChild(myEmail);
+      this.copiedEmail = true;
     }
   }
 };
@@ -226,5 +233,30 @@ export default {
 .getintouch-show{
   transform: translateY(0rem);
     opacity: 0.9;
+}
+.copy-email{
+    position: relative;
+    color: #cee8f5;
+    font-size: 12px;
+    font-family: "Work Sans";
+    margin-top: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s,opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s;
+    &:hover{
+      color: rgb(106, 228, 230);
+
+    }
+    &.show{
+      transform: translateY(0rem);
+      opacity: 0.9;
+    }
+    .copied{
+    position: absolute;
+    margin-left: 6px;
+    transform: translateY(-3px);
+    }
 }
 </style>
