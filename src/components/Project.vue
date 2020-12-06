@@ -15,6 +15,12 @@
       <div class="project-desc">
         <p>{{ config.description }}</p>
       </div>
+      <div class="project-tags">
+            <div class="project-tag" v-for="(tag,index) in config.tags" v-bind:key="tag">
+                <p >{{tag}}{{index!==config.tags.length - 1? '&nbsp;|&nbsp;' : ''}}</p>
+            </div>
+              
+      </div>
     </div>
   </div>
 </template>
@@ -60,9 +66,20 @@ export default {
   top: 0;
   margin-left: 1rem;
   .project-name {
-      font-weight: 900;
+      h2{
+          font-weight: 900;
+          text-transform: uppercase;
+          color: white;
+      }
   }
   .project-desc {
+  }
+  .project-tag{
+      display: inline-block;
+      p{
+          margin-bottom: 0;
+          color: #6ae4e6;
+      }
   }
 }
 
