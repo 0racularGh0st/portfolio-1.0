@@ -1,5 +1,8 @@
 <template>
   <div :class="place==='left'?'main-project-container': 'main-project-container right'">
+    <div :class="place==='left'?'project-name':'project-name right'">
+        <h2>{{ config.name }}</h2>
+        </div>
     <div :class="place==='left'?'project-content':'project-content right'">
     <div :class="place==='left'?'project-image-container':'project-image-container right'">
       <img
@@ -10,9 +13,6 @@
       />
     </div>
       <div :class="place==='left'?'main-contents':'main-contents right'">
-        <div :class="place==='left'?'project-name':'project-name right'">
-        <h2>{{ config.name }}</h2>
-      </div>
       <div class="project-desc">
         <p>{{ config.description }}</p>
       </div>
@@ -177,6 +177,7 @@ export default {
   }
   .project-desc {
       margin: 0 0.75rem;
+      padding-top: 1rem;
   }
   .project-tags{
       margin: 0 0.75rem;
@@ -203,6 +204,15 @@ export default {
     &.right{
         margin-right: auto;
         margin-left: unset;
+    }
+    &:hover{
+        z-index: 4;
+        .project-image {
+            opacity: 1;
+        }
+        &::before{
+            content: unset;
+        }
     }
   }
   .project-image {
@@ -234,7 +244,11 @@ export default {
      
     }
   .project-desc {
-      
+    margin: 0 0.75rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px -15px black;
   }
   .project-tags{
       
