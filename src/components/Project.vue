@@ -261,21 +261,12 @@ export default {
         right: 0;
     }
     }
-    .project-name {
-     
-    }
   .project-desc {
     margin: 0 0.75rem;
     background: rgba(0, 0, 0, 0.65);
     padding: 0 1rem;
     border-radius: 5px;
     box-shadow: 0 10px 30px -15px black;
-  }
-  .project-tags{
-      
-  }
-  .project-tag{
-    
   }
   }
 }

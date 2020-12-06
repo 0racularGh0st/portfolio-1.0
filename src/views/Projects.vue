@@ -6,7 +6,7 @@
     </div>
     <div class="section-details-container">
       <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify" place="left"/>
-      <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify" place="right"/>
+      <Project :imgSrc="webpSupported? 'assets/peer-vue.webp' : 'assets/peer-vue.png'" :config="config.peerVue" place="right"/>
     </div>
   </section>
 </template>
