@@ -5,12 +5,14 @@
         </div>
     <div :class="place==='left'?'project-content':'project-content right'">
     <div :class="place==='left'?'project-image-container':'project-image-container right'">
-      <img
+      <a :href="config.website" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <img
         v-bind:src="require(`@/${imgSrc}`)"
         class="project-image"
         height="600"
         width="600"
       />
+      </a>
     </div>
       <div :class="place==='left'?'main-contents':'main-contents right'">
       <div class="project-desc">
@@ -130,6 +132,7 @@ export default {
 .project-image-container {
     position: absolute;
     z-index: -1;
+    font-size: 0;
     &::before {
     content: "";
     z-index: 2;
@@ -144,6 +147,7 @@ export default {
     background: rgb(2 21 31);
     opacity: 0.5;
     border-radius: 5px;
+    transition: all 0.5s ease .5s;
   }
 }
 .project-image {
@@ -201,12 +205,13 @@ export default {
     max-width: 50%;
     margin-left: auto;
     min-width: 500px;
-    &.right{
-        margin-right: auto;
-        margin-left: unset;
-    }
+    transition: all 0.1s ease;
+    box-shadow: none;
+    
     &:hover{
         z-index: 4;
+        box-shadow: -20px 0px 30px 0px #0a1019;
+        border-radius: 5px;
         .project-image {
             opacity: 1;
         }
@@ -214,10 +219,26 @@ export default {
             content: unset;
         }
     }
+    &.right{
+        margin-right: auto;
+        margin-left: unset;
+        &:hover{
+        z-index: 4;
+        box-shadow: 20px 0px 30px 0px #0a1019;
+        border-radius: 5px;
+        .project-image {
+            opacity: 1;
+        }
+        &::before{
+            content: unset;
+        }
+    }
+    }
   }
   .project-image {
     width: 100%;
     height: unset;
+    transition: all 0.5s ease .1s;
   }
   .project-content {
     max-width: unset;
@@ -245,7 +266,7 @@ export default {
     }
   .project-desc {
     margin: 0 0.75rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.65);
     padding: 0 1rem;
     border-radius: 5px;
     box-shadow: 0 10px 30px -15px black;
