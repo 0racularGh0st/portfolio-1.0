@@ -5,7 +5,8 @@
       <div class="horizontal-gradient-line-to-right" />
     </div>
     <div class="section-details-container">
-      <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify"/>
+      <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify" place="left"/>
+      <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify" place="right"/>
     </div>
   </section>
 </template>
@@ -75,6 +76,12 @@ export default {
 }
 .section-details-container{
   color: #bec2d2;
+  box-shadow: unset;
+}
+@media screen and (max-width: 767px){
+  .section-details-container{
   padding: unset;
+  max-width: unset;
+}
 }
 </style>
