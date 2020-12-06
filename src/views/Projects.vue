@@ -5,16 +5,35 @@
       <div class="horizontal-gradient-line-to-right" />
     </div>
     <div class="section-details-container">
-      <p>To be added soon! Check back later. </p>
+      <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify"/>
     </div>
   </section>
 </template>
 <script>
 import './sections.scss';
 import './css-styled-components.scss';
+const Modernizer = window.Modernizr;
+const isWebpSupported = () => {
+  if(Modernizer.webp)
+    return true;
+  else
+    return false;
+}
+import config from "../config";
+import Project from "../components/Project";
 export default {
+    async created(){
+      this.webpSupported = await isWebpSupported();
+    },
     mounted(){
-    this.observeMethod();
+      console.log("Mounted");
+      this.observeMethod();
+  },
+  data(){
+    return{
+      webpSupported: false,
+      config: config.PROJECTS
+    }
   },
   methods: {
     observeMethod: function(){
@@ -33,6 +52,9 @@ export default {
         },options);
         observer.observe(subSection);
     }
+  },
+  components: {
+    Project
   }
 }
 </script>
@@ -53,5 +75,6 @@ export default {
 }
 .section-details-container{
   color: #bec2d2;
+  padding: unset;
 }
 </style>

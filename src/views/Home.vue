@@ -257,6 +257,7 @@ export default {
     position: absolute;
     margin-left: 6px;
     transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
     }
 }
 </style>
