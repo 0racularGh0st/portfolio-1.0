@@ -11,6 +11,7 @@
         class="project-image"
         height="600"
         width="600"
+        :alt="config.name"
       />
       </a>
     </div>
