@@ -1,5 +1,6 @@
 module.exports = {
   pwa: {
-    name: 'Nigel David'
+    name: 'Nigel David',
+    workboxOptions: { skipWaiting: true }
   }
 }

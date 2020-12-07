@@ -152,6 +152,15 @@ export default {
     transition: all 0.5s ease .5s;
   }
 }
+.project-name {
+      h2{
+          font-weight: 900;
+          color: white;
+      }
+      &.right{
+          text-align: right;
+      }
+  }
 .project-image {
     width: 100%;
     height: 100%;
@@ -171,16 +180,7 @@ export default {
       margin-left: auto;
   }
   }
-  .project-name {
-      h2{
-          font-weight: 900;
-          text-transform: uppercase;
-          color: white;
-      }
-      &.right{
-          text-align: right;
-      }
-  }
+  
   .project-desc {
       margin: 0 0.75rem;
       padding-top: 1rem;
