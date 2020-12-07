@@ -62,6 +62,8 @@ export default {
 .buttons{
     display: flex;
     margin-top: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
     &.right{
         justify-content: flex-end;
     }
@@ -182,6 +184,7 @@ export default {
   .project-desc {
       margin: 0 0.75rem;
       padding-top: 1rem;
+      color: white;
   }
   .project-tags{
       margin: 0 0.75rem;
