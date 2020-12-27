@@ -20,6 +20,13 @@ module.exports = {
             website: "https://service-status-nigeldavid.web.app/",
             description: "A Progressive Web App for monitoring the health status of all my web apps and servers in one common space. The server for this project also runs a scheduled Cron Job everyday at 9:00 am IST and sends me a notification through Web-Push if any service is down. The server runs in my personal OVH Cloud VPS.",
             tags: ["ReactJS","Web-Push","Cron","NodeJS","Express","OVH Cloud","Firebase"]
+        },
+        craftastic: {
+            name: "Craftastic",
+            github: "https://github.com/0racularGh0st/craftastic",
+            website: "https://craftastic09.in",
+            description: "A portfolio website for a family member who does Arts and Crafts.Since the site uses a lot of images, it was made using GatsbyJS to ease the use of images through gatsby-image to handle different image sizes and formats for various devices and also take care of lazy-loading them through the use of the Intersection Observer API. The site is hosted in Netlify.",
+            tags: ["GatsbyJS","ReactJS","Netlify"]
         }
     }
 }

@@ -8,6 +8,7 @@
       <Project :imgSrc="webpSupported? 'assets/my-spotify.webp' : 'assets/my-spotify.png'" :config="config.mySpotify" place="left"/>
       <Project :imgSrc="webpSupported? 'assets/peer-vue.webp' : 'assets/peer-vue.png'" :config="config.peerVue" place="right"/>
       <Project :imgSrc="webpSupported? 'assets/service-status.webp' : 'assets/service-status.png'" :config="config.serviceStatus" place="left"/>
+      <Project :imgSrc="webpSupported? 'assets/craftastic.webp' : 'assets/craftastic.png'" :config="config.craftastic" place="right"/>
     </div>
   </section>
 </template>
