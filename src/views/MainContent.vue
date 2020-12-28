@@ -7,6 +7,7 @@
     <social></social>
     <my-footer></my-footer>
   </div>
+  <div class="elfsight-app-c5a13acc-0684-464d-ba8c-79649f4123b1"></div>
 </div>
 </template>
 <script>
