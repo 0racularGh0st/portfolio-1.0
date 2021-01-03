@@ -230,7 +230,8 @@ export default {
   display: block;
   margin: 0 auto;
   fill: none;
-  transform: translateX(15.5px) translateY(-9px);
+  // transform: translateX(15.5px) translateY(-9px);
+  transform: translate3d(15.5px,-9px,0px);
 }
 .container svg:hover {
   filter: drop-shadow(0 0 0.4rem rgb(106, 228, 230));
@@ -284,11 +285,11 @@ export default {
   @keyframes navLinksDrop {
     0% {
       opacity: 0;
-      transform: translateY(-64px);
+      transform: translate3d(0px,-64px,0px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0px);
+      transform: translate3d(0px,0px,0px);
     }
   }
   .social-container-nav{
@@ -335,6 +336,7 @@ export default {
   height: 30px;
   position: absolute;
   transform: translateX(23.5px) translateY(-3px);
+  transform: translate3d(23.5px,-3px,0px);
 }
 .mylogo {
   position: relative;
@@ -363,7 +365,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
-    transform: translateX(100%);
+    transform: translate3d(100%,0,0);
     transition: all 0.3s ease-in;
     height: 230px;
     background: linear-gradient(
@@ -397,28 +399,28 @@ export default {
     background: rgba(0, 0, 0, 0.5);
   }
   .nav-active {
-    transform: translateX(0%);
+    transform: translate3d(0,0,0);
   }
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translate3d(50px,0px,0px);
     }
     to {
       opacity: 1;
-      transform: translateX(0px);
+      transform: translate3d(0px,0px,0px);
     }
   }
 
   .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate3d(-5px, 6px,0px);
   }
   .toggle .line2 {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translate3d(50%,0,0);
   }
   .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate3d(-5px, -6px,0px);
   }
 }
 </style>

@@ -259,12 +259,12 @@ body {
     rgba(0, 0, 255, 0)
   );
   border-radius: 100%;
-  transform: translateX(50%) rotateZ(-45deg);
+  transform: translate3d(50%,0,0) rotateZ(-45deg);
   animation: shining 3000ms ease-in-out;
 }
 
 .star::after {
-  transform: translateX(50%) rotateZ(45deg);
+  transform: translate3d(50%,0,0) rotateZ(45deg);
 }
 
 .star:nth-child(5) {
@@ -366,10 +366,10 @@ body {
 
 @keyframes shooting {
   0% {
-    transform: translateX(0) rotate(-15deg) translateY(0);
+    transform: translate3d(0,0,0) rotate(-15deg);
   }
   100% {
-    transform: translateX(320px) rotate(-15deg) translateY(-65px);
+    transform: translate3d(320px,-65px,0px) rotate(-15deg);
   }
 }
 #tsparticles {

@@ -136,7 +136,7 @@ export default {
   color: #cee8f5;
   overflow: hidden;
   white-space: nowrap;
-  transform: translateY(-50%);
+  transform: translate3d(0,-50%,0);
 }
 
 .line-typing::after {
@@ -172,12 +172,12 @@ export default {
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
-  transform: translateY(3rem);
+  transform: translate3d(0rem,3rem,0rem);
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
 }
 .content-2-show{
   opacity: 0.7;
-  transform: translateY(0);
+  transform: translate3d(0,0,0);
 }
 .button-wrapper{
     display: flex;
@@ -188,7 +188,7 @@ export default {
     }
 }
 .getintouch{
-    transform: translateY(3rem);
+    transform: translate3d(0rem,3rem,0rem);
     opacity: 0;
     padding: 1px;
     background-color: black;
@@ -231,7 +231,7 @@ export default {
   }
 }
 .getintouch-show{
-  transform: translateY(0rem);
+  transform: translate3d(0rem,0rem,0rem);
     opacity: 0.9;
 }
 .copy-email{
@@ -242,7 +242,7 @@ export default {
     margin-top: 0.5rem;
     text-align: center;
     cursor: pointer;
-    transform: translateY(3rem);
+    transform: translate3d(0rem,3rem,0rem);
     opacity: 0;
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s,opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s;
     &:hover{
@@ -250,14 +250,14 @@ export default {
 
     }
     &.show{
-      transform: translateY(0rem);
+      transform: translate3d(0rem,0rem,0rem);
       opacity: 0.9;
     }
     .copied{
     position: absolute;
     margin-left: 6px;
-    transform: translateY(-3px);
-    -webkit-transform: translateY(-3px);
+    transform: translate3d(0px,-3px,0px);
+    -webkit-transform: translate3d(0px,-3px,0px);
     }
 }
 </style>

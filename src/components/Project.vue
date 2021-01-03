@@ -53,7 +53,7 @@ export default {
 
 .main-project-container {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   
 
   &.right{
@@ -205,7 +205,7 @@ export default {
 @media screen and (min-width: 48rem) {
   .main-project-container {
      position: relative;
-     margin-bottom: 4.5rem;
+     margin-bottom: 7.5rem;
   }
   .project-image-container {
     position: relative;

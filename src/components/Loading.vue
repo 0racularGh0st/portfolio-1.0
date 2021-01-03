@@ -70,12 +70,12 @@ svg {
   height: 100%;
   margin: 0 auto;
   fill: none;
-  transform: translateY(-8%);
+  transform: translate3d(0,-8%,0);
 }
 .logo{
     height: 60px;
     width: 60px;
-    transform: translateY(7px);
+    transform: translate3d(0px,7px,0px);
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -87,7 +87,7 @@ svg {
     vertical-align: middle;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate3d(-50%, -70%,0);
 }
 .loading-path{
   display: none;

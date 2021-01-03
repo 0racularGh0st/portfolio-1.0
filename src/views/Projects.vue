@@ -82,24 +82,24 @@ export default {
   margin-bottom: 5rem;
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
   opacity: 0;
-  transform: translateY(3rem);
-  -webkit-transform: translateY(3rem);
+  transform: translate3d(0rem,3rem,0rem);
+  -webkit-transform: translate3d(0rem,3rem,0rem);
 }
 .project-item{
   opacity: 0;
-  transform: translateY(3rem);
-  -webkit-transform: translateY(3rem);
+  transform: translate3d(0rem,3rem,0rem);
+  -webkit-transform: translate3d(0rem,3rem,0rem);
   transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
   &.show{
     opacity: 1;
-    transform: translateY(0rem);
-    -webkit-transform: translateY(0rem);
+    transform: translate3d(0rem,0rem,0rem);
+    -webkit-transform: translate3d(0rem,0rem,0rem);
   }
 }
 .sub-section-show{
   opacity: 1;
-  transform: translateY(0rem);
-  -webkit-transform: translateY(0rem);
+  transform: translate3d(0rem,0rem,0rem);
+  -webkit-transform: translate3d(0rem,0rem,0rem);
 }
 .section-details-container{
   color: #bec2d2;
