@@ -123,16 +123,36 @@ display: flex;
   padding-bottom: 3rem;
   box-shadow: unset;
 }
-@media screen and (max-width: 767px){
+.section-details-heading{
+    margin-top: 0;
+  }
+@media screen and (max-width: 768px){
   .section-details-container{
   padding: unset;
   max-width: unset;
 }
+.tree{
+  position: relative;
+   width: 100%;
+   box-sizing: border-box;
+   &::before{
+      content: '';
+      position: absolute;
+      left: 12px;
+      width: 1px;
+      height: 100%;
+      opacity: 0.7;
+      background:linear-gradient(#3e6ead 0%, #6ae4e6 80%, transparent 100%);
+   }
+  .content{
+    box-sizing: border-box;
+    .tree-hex{
+      position: absolute;
+    }
+  }
+}
 }
 @media screen and (min-width: 769px){
-  .section-details-heading{
-    margin-top: 0;
-  }
   .tree{
    position: relative;
    width: 100%;
