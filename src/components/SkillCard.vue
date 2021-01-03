@@ -38,7 +38,7 @@ export default {
         border-radius: 4px;
         position: absolute;
         transform: translate3d(0px,-40px,0px);
-        margin-top: 0;
+        margin-top: 8px;
         opacity: 0;
         &::before{
                     content: "";
@@ -66,7 +66,7 @@ export default {
         position: absolute;
         transform: translate3d(0px,40px,0px);
         margin-bottom: 0;
-        margin-top: 2em;
+        margin-top: 12px;
         opacity: 0;
         &::before{
                content: "";

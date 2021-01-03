@@ -7,53 +7,65 @@
     <div class="section-details-container tree">
             <div class="content">
               <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-              <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Languages I Speak</h4></div>
-               <div class="skills-icons">
+              <div class="bubble">
+                <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Languages I Speak</h4></div>
+                <div class="skills-icons">
                 <skill-card imgSrc="assets/javascript.png" imgLabel="Javascript" imgHeight="40" imgWidth="32.3" textPos="up"/>
                 <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40" imgWidth="40" textPos="down"/>
                 <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40" imgWidth="40" textPos="up"/>
                 <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40" imgWidth="40" textPos="down"/>
               </div>
+              </div>
             </div>
            <div class="content">
-             <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-            <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Frontend Frameworks</h4></div>
+            <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
+            <div class="bubble">
+              <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Frontend Frameworks</h4></div>
              <div class="skills-icons">
                 <skill-card imgSrc="assets/vue.png" imgLabel="Vue" imgHeight="40" imgWidth="46.22" textPos="up"/>
                 <skill-card imgSrc="assets/electron.png" imgLabel="ElectronJS" imgHeight="40" imgWidth="36.88" textPos="down"/>
                 <skill-card imgSrc="assets/react.png" imgLabel="ReactJS" imgHeight="40" imgWidth="40" textPos="up"/>
             </div>  
+            </div>
            </div>
           <div class="content">
             <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-            <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Runtime Environment</h4></div>
-            <div class="skills-icons">
-                <skill-card imgSrc="assets/node2.png" imgLabel="NodeJS" imgHeight="40" imgWidth="40" textPos="up"/>
-            </div>   
+            <div class="bubble">
+              <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Runtime Environment</h4></div>
+                <div class="skills-icons">
+                    <skill-card imgSrc="assets/node2.png" imgLabel="NodeJS" imgHeight="40" imgWidth="40" textPos="up"/>
+                </div>  
+            </div> 
           </div> 
           <div class="content">
             <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-             <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Backend Framework</h4></div>
+            <div class="bubble">
+               <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Backend Framework</h4></div>
              <div class="skills-icons">
                 <skill-card imgSrc="assets/express.png" imgLabel="ExpressJS" imgHeight="40" imgClass="expressjs" imgWidth="65.33" textPos="up"/>
             </div>   
+            </div>
           </div>
         <div class="content">
           <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-          <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Web Technologies</h4></div>
+          <div class="bubble">
+            <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Web Technologies</h4></div>
           <div class="skills-icons">
                 <skill-card imgSrc="assets/html.png" imgLabel="HTML" imgHeight="40" imgWidth="38.84" textPos="up"/>
                 <skill-card imgSrc="assets/css3.png" imgLabel="CSS3" imgHeight="40" imgWidth="40" textPos="down"/>
                 <skill-card imgSrc="assets/sass.png" imgLabel="SCSS" imgHeight="40" imgWidth="53.33" textPos="up"/>
             </div>  
+          </div>
         </div>
        <div class="content">
          <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
-          <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Databases</h4></div>
+          <div class="bubble">
+            <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Databases</h4></div>
             <div class="skills-icons">
                  <skill-card imgSrc="assets/mysql.png" imgLabel="MySql" imgHeight="40" imgWidth="40" textPos="up"/>
                  <skill-card imgSrc="assets/mongodb.png" imgLabel="MongoDB" imgHeight="40" imgWidth="40" textPos="down"/>
             </div>  
+          </div>
        </div>
     </div>
    </section>
@@ -125,6 +137,7 @@ display: flex;
 }
 .section-details-heading{
     margin-top: 0;
+    margin-bottom: 0;
   }
 @media screen and (max-width: 768px){
   .section-details-container{
@@ -153,6 +166,14 @@ display: flex;
 }
 }
 @media screen and (min-width: 769px){
+  .section-details-container{
+  padding: unset;
+}
+.section-details-heading-wrapper{
+    display: unset;
+    align-items: unset;
+    justify-content: unset;
+}
   .tree{
    position: relative;
    width: 100%;
@@ -178,6 +199,17 @@ display: flex;
       position: absolute;
       right: -13px;
     }
+    .section-details-heading{
+    text-align: right;
+    width: min-content;
+    margin-left: auto;
+    }
+    .skills-icons{
+      text-align: right;
+    }
+    .bubble{
+      margin-right: 24px;
+    }
 }
 .content:nth-child(even){
   position: relative;
@@ -186,6 +218,17 @@ display: flex;
   .tree-hex{
       position: absolute;
       left: -12px;
+    }
+    .section-details-heading{
+    text-align: left;
+    width: min-content;
+    margin-right: auto;
+    }
+    .skills-icons{
+       text-align: left;
+    }
+    .bubble{
+      margin-left: 24px;
     }
 }
 .container {
