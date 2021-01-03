@@ -251,11 +251,11 @@ export default {
   text-transform: uppercase;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
-  transition: all 0.5s ease;
-  top: 0px;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  transform: translate3d(0px,0px,0px);
 }
 .hidenav {
-  top: -64px;
+  transform: translate3d(0px,-64px,0px);
 }
 .nav-drop-shadow {
   box-shadow: 0px 4px 13px 1px rgb(36, 54, 66, 0.4);
@@ -274,13 +274,13 @@ export default {
   }
 
   .navLinksShow:nth-child(1) {
-    animation: 0.3s ease 0.3s 1 normal forwards running navLinksDrop;
+    animation: 0.5s ease 0.3s 1 normal forwards running navLinksDrop;
   }
   .navLinksShow:nth-child(2) {
-    animation: 0.3s ease 0.44s 1 normal forwards running navLinksDrop;
+    animation: 0.5s ease 0.44s 1 normal forwards running navLinksDrop;
   }
   .navLinksShow:nth-child(3) {
-    animation: 0.3s ease 0.58s 1 normal forwards running navLinksDrop;
+    animation: 0.5s ease 0.58s 1 normal forwards running navLinksDrop;
   }
   @keyframes navLinksDrop {
     0% {
@@ -318,11 +318,11 @@ export default {
     width: 100vw;
     height: 64px;
     background: rgba(0, 0, 0, 0.9);
-    transition: all 0.3s ease;
-    top: 0px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+    transform: translate3d(0px,0px,0px);
   }
   .hidenav {
-    top: -64px;
+    transform: translate3d(0px,-64px,0px);
   }
   .nav-links svg {
   height: 23px;

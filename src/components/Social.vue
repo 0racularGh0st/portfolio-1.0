@@ -120,16 +120,16 @@ export default {
             margin-top: 5px;
             margin-bottom: 8px;
             transform: translate3d(-50px,0px,0px);
-            animation: 0.3s ease 0.3s 1 normal forwards running show-social-icon;
+            animation: 0.5s ease 0.3s 1 normal forwards running show-social-icon;
         }
         .linkedin{
             margin-bottom: 8px;
              transform: translate3d(-50px,0px,0px);
-            animation: 0.3s ease 0.44s 1 normal forwards running show-social-icon;
+            animation: 0.5s ease 0.44s 1 normal forwards running show-social-icon;
         }
         .email{
              transform: translate3d(-50px,0px,0px);
-            animation: 0.3s ease 0.58s 1 normal forwards running show-social-icon;
+            animation: 0.5s ease 0.58s 1 normal forwards running show-social-icon;
         }
         @keyframes show-social-icon {
             0%{
