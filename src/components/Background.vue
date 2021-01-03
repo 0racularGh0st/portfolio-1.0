@@ -110,7 +110,7 @@ export default {
       particle_ready: false,
       particle_link_distance: 80,
       no_of_particles:20,
-      particle_hover: true
+      particle_hover: false
     };
   },
   computed: {
@@ -132,16 +132,17 @@ export default {
     this.viewportDiff =
       document.documentElement.clientHeight - window.innerHeight;
     this.moon = document.getElementById("moon");
-    this.moon.style.left = "0px";
-    this.moon.style.top = "0px";
+    // this.moon.style.left = "0px";
+    // this.moon.style.top = "0px";
+    this.moon.style.transform = "translate3d(0px,0px,0px)";
     window.addEventListener("scroll", function () {
-      let value = window.scrollY;
-      this.moon.style.left = value / 2 + "px";
-      this.moon.style.top = -(value / 3) + "px";
+      // this.moon.style.left = value / 2 + "px";
+      // this.moon.style.top = -(value / 3) + "px";
+      this.moon.style.transform = `translate3d(${(window.pageYOffset * 0.2)}px,-${(window.pageYOffset * 0.3)}px,0px)`;
     });
     this.particle_link_distance = window.innerWidth>1024? 110: 80;
     this.no_of_particles= window.innerWidth > 1024? 30: 20;
-    this.particle_hover= window.innerWidth > 1024? true: false;
+    this.particle_hover= window.innerWidth > 1024? false: false;
     setTimeout(()=>{
       this.particle_ready = true;
     },1500);
@@ -176,6 +177,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  will-change: transform;
 }
 .still-stars,
 .twinkling,
@@ -219,7 +221,7 @@ body {
   background-position-x: 90%;
   filter: brightness(0.9);
   left: 0px;
-  transition: all;
+  transition: transform;
 }
 .no-webp .moon {
   background: url(../assets/rsz_moon.jpg) top right transparent;
@@ -230,7 +232,7 @@ body {
   background-position-x: 90%;
   filter: brightness(0.9);
   left: 0px;
-  transition: all;
+  transition: transform;
 }
 .star {
   position: absolute;
