@@ -126,11 +126,7 @@ export default {
     margin: 0 auto;
     width: 100%;
 }
-.section-details-heading-wrapper{
-display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .section-details-container{
   padding-bottom: 3rem;
   box-shadow: unset;
@@ -143,6 +139,9 @@ display: flex;
   .section-details-container{
   padding: unset;
   max-width: unset;
+}
+.section-details-heading{
+  text-align: left;
 }
 .tree{
   position: relative;
@@ -161,6 +160,11 @@ display: flex;
     box-sizing: border-box;
     .tree-hex{
       position: absolute;
+      transform: translateY(-4px);
+    }
+    .bubble{
+          width: max-content;
+          margin-left: 32px;
     }
   }
 }

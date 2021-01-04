@@ -14,7 +14,6 @@
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
-    <div id="moon" class="moon"></div>
     <Particles
       v-if="particle_ready"
       id="tsparticles"
@@ -131,15 +130,6 @@ export default {
   mounted() {
     this.viewportDiff =
       document.documentElement.clientHeight - window.innerHeight;
-    this.moon = document.getElementById("moon");
-    // this.moon.style.left = "0px";
-    // this.moon.style.top = "0px";
-    this.moon.style.transform = "translate3d(0px,0px,0px)";
-    window.addEventListener("scroll", function () {
-      // this.moon.style.left = value / 2 + "px";
-      // this.moon.style.top = -(value / 3) + "px";
-      this.moon.style.transform = `translate3d(${(window.pageYOffset * 0.2)}px,-${(window.pageYOffset * 0.3)}px,0px)`;
-    });
     this.particle_link_distance = window.innerWidth>1024? 110: 80;
     this.no_of_particles= window.innerWidth > 1024? 30: 20;
     this.particle_hover= window.innerWidth > 1024? false: false;
@@ -166,18 +156,6 @@ body {
   to {
     background-position: -10000px 5000px;
   }
-}
-
-.moon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  will-change: transform;
 }
 .still-stars,
 .twinkling,
@@ -210,29 +188,6 @@ body {
   background: url(../assets/twinkling.jpg) repeat top center transparent;
   z-index: 1;
   animation: move-twink-back 200s linear infinite;
-}
-
-.webp .moon {
-  background: url(../assets/rsz_moon.webp) top right transparent;
-  background-repeat: no-repeat;
-  z-index: 6;
-  background-size: 10rem;
-  background-position-y: 30%;
-  background-position-x: 90%;
-  filter: brightness(0.9);
-  left: 0px;
-  transition: transform;
-}
-.no-webp .moon {
-  background: url(../assets/rsz_moon.jpg) top right transparent;
-  background-repeat: no-repeat;
-  z-index: 6;
-  background-size: 10rem;
-  background-position-y: 30%;
-  background-position-x: 90%;
-  filter: brightness(0.9);
-  left: 0px;
-  transition: transform;
 }
 .star {
   position: absolute;

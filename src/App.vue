@@ -9,10 +9,10 @@
 </template>
 <script>
 const Modernizer = window.Modernizr;
-   import MoonImage from './assets/rsz_moon.webp';
+  //  import MoonImage from './assets/rsz_moon.webp';
    import StarsImage from './assets/stars.webp';
    import TwinklingImage from './assets/twinkling.webp';
-   import MoonImageJpg from './assets/rsz_moon.jpg';
+   //import MoonImageJpg from './assets/rsz_moon.jpg';
    import StarsImageJpg from './assets/stars.jpg';
    import TwinklingImageJpg from './assets/twinkling.jpg';
    import Loading from './components/Loading';
@@ -20,9 +20,7 @@ import MainContent from './views/MainContent';
 import './views/fonts.css';
 export default {
   data(){
-    //Using these flags to show a loader first until all background images are downloaded
     return {
-      moonImageDownloaded : false,
       starsImageDownloaded : false,
       twinklingImageDownloaded : false
     }
@@ -34,19 +32,10 @@ export default {
      imageReady: function(){
        let isWebpSupported = Modernizer.webp;
        let self = this;
-        let moonImage = new Image();
         let starsImage = new Image();
         let twinklingImage = new Image();
-        moonImage.src = isWebpSupported? MoonImage : MoonImageJpg;
         starsImage.src = isWebpSupported? StarsImage : StarsImageJpg;
         twinklingImage.src = isWebpSupported? TwinklingImage : TwinklingImageJpg;
-
-       moonImage.onload = function(){
-            if(moonImage.complete){
-              self.moonImageDownloaded = true;
-            }
-       }
-
        starsImage.onload = function(){
             if(starsImage.complete){
               self.starsImageDownloaded = true;
@@ -62,7 +51,7 @@ export default {
   },
   computed: {
     componentToShow: function(){
-      if(!(this.moonImageDownloaded && this.starsImageDownloaded && this.twinklingImageDownloaded))
+      if(!(this.starsImageDownloaded && this.twinklingImageDownloaded))
           return "Loading"
       else 
           return "MainContent"
