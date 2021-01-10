@@ -100,6 +100,21 @@ export default {
             }
         },options);
         observer.observe(subSection);
+
+        const skillItems = document.querySelectorAll(".bubble");
+              let itemObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                      if(entry.isIntersecting)
+                      {
+                        entry.target.classList.add("show");
+                        itemObserver.unobserve(entry.target);
+                      }
+                    })
+              },options);
+              skillItems.forEach((skillItem)=>{
+                itemObserver.observe(skillItem);
+              })
+
     }
   }
 }
@@ -336,6 +351,13 @@ export default {
     background: linear-gradient(45deg, #3e6ead 0%, #6ae4e6 50%, transparent 100%);
     bottom: -3px;
     z-index: -1;
+  }
+}
+.bubble{
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  &.show{
+    opacity: 1;
   }
 }
 </style>

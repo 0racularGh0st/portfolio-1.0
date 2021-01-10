@@ -43,7 +43,7 @@ export default {
       let options = {
       root: document.querySelector('main-app'),
       rootMargin: '0px',
-      threshold: 0.1
+      threshold: 0.0
         }
         const subSection = document.querySelector(".projects-main-section");
               let observer = new IntersectionObserver((entry) => {

@@ -212,13 +212,15 @@ export default {
     max-width: 50%;
     margin-left: auto;
     min-width: 500px;
-    transition: all 0.1s ease;
+    transition: all 0.1s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+     transform: rotate3d(0,1,0,-15deg);
     box-shadow: none;
     
     &:hover{
         z-index: 4;
         box-shadow: -20px 0px 30px 0px #0a1019;
         border-radius: 5px;
+         transform: rotate3d(0,1,0,0deg);
         .project-image {
             opacity: 1;
         }
@@ -229,10 +231,14 @@ export default {
     &.right{
         margin-right: auto;
         margin-left: unset;
+        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+        transform: rotate3d(0,1,0,15deg);
+
         &:hover{
         z-index: 4;
         box-shadow: 20px 0px 30px 0px #0a1019;
         border-radius: 5px;
+        transform: rotate3d(0,1,0,0deg);
         .project-image {
             opacity: 1;
         }
@@ -250,6 +256,7 @@ export default {
   .project-content {
     max-width: unset;
     position: relative;
+    perspective: 600px;
     &.right{
         margin-right: 0;
     }
