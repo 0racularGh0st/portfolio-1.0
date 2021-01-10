@@ -125,6 +125,7 @@ export default {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    margin-bottom: 8px;
 }
 
 .section-details-container{
@@ -142,6 +143,7 @@ export default {
 }
 .section-details-heading{
   text-align: left;
+  margin-top: 8px;
 }
 .tree{
   position: relative;
@@ -158,13 +160,42 @@ export default {
    }
   .content{
     box-sizing: border-box;
+    margin-bottom: 1rem;
+    position: relative;
     .tree-hex{
       position: absolute;
       transform: translateY(-4px);
     }
     .bubble{
-          width: max-content;
-          margin-left: 32px;
+          min-width: 230px;
+          width: auto;
+          margin-left: 40px;
+          padding-left: 16px;
+          border: 1px solid var(--border-color-main);
+          border-radius: 6px;
+          
+          &::before{
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              background: linear-gradient(-90deg, var(--border-color-main) 0%, var(--main-light-gradient) 100%);
+              left: 32px;
+              top: 10px;
+              border-bottom-left-radius: 100%;
+              z-index: 1;
+          }
+          &::after{
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 6px;
+              background: black;
+              left: 33px;
+              top: 11px;
+              border-bottom-left-radius: 100%;
+              z-index: 1;
+          }
     }
   }
 }
@@ -207,12 +238,40 @@ export default {
     text-align: right;
     width: min-content;
     margin-left: auto;
+    margin-top: 8px;
     }
     .skills-icons{
       text-align: right;
+      margin-bottom: 8px;
     }
     .bubble{
       margin-right: 24px;
+      padding-right: 8px;
+      border: 1px solid var(--border-color-main);
+      border-radius: 6px;
+      
+      &::before{
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background: linear-gradient(90deg, var(--border-color-main) 0%, var(--main-light-gradient) 100%);
+          right: 16px;
+          top: 10px;
+          border-bottom-right-radius: 100%;
+          z-index: 1;
+      }
+      &::after{
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 6px;
+          background: black;
+          right: 17px;
+          top: 11px;
+          border-bottom-right-radius: 100%;
+          z-index: 1;
+      }
     }
 }
 .content:nth-child(even){
@@ -227,12 +286,39 @@ export default {
     text-align: left;
     width: min-content;
     margin-right: auto;
+    margin-top: 8px;
     }
     .skills-icons{
        text-align: left;
+       margin-bottom: 8px;
     }
     .bubble{
       margin-left: 24px;
+      padding-left: 8px;
+      border: 1px solid var(--border-color-main);
+      border-radius: 6px;
+      &::before{
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background: linear-gradient(90deg, var(--main-light-gradient) 0%, var(--border-color-main) 100%);
+          left: 16px;
+          top: 10px;
+          border-bottom-left-radius: 100%;
+          z-index: 1;
+      }
+      &::after{
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 6px;
+          background: black;
+          left: 17px;
+          top: 11px;
+          border-bottom-left-radius: 100%;
+          z-index: 1;
+      }
     }
 }
 .container {
@@ -240,5 +326,16 @@ export default {
   max-width: 46px;
 }
 }
-
+.section-details-heading {
+  position: relative;
+  &::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(45deg, #3e6ead 0%, #6ae4e6 50%, transparent 100%);
+    bottom: -3px;
+    z-index: -1;
+  }
+}
 </style>
