@@ -65,6 +65,7 @@ export default {
     margin-top: 1rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    pointer-events: auto;
     &.right{
         justify-content: flex-end;
     }
@@ -192,6 +193,7 @@ export default {
   }
   .project-tags{
       margin: 0 0.75rem;
+      pointer-events: auto;
   }
   .project-tag{
       display: inline-block;
@@ -212,15 +214,13 @@ export default {
     max-width: 50%;
     margin-left: auto;
     min-width: 500px;
-    transition: all 0.1s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
-     transform: rotate3d(0,1,0,-15deg);
+    transition: all 0.1s ease;
     box-shadow: none;
     
     &:hover{
         z-index: 4;
         box-shadow: -20px 0px 30px 0px #0a1019;
         border-radius: 5px;
-         transform: rotate3d(0,1,0,0deg);
         .project-image {
             opacity: 1;
         }
@@ -231,14 +231,10 @@ export default {
     &.right{
         margin-right: auto;
         margin-left: unset;
-        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
-        transform: rotate3d(0,1,0,15deg);
-
         &:hover{
         z-index: 4;
         box-shadow: 20px 0px 30px 0px #0a1019;
         border-radius: 5px;
-        transform: rotate3d(0,1,0,0deg);
         .project-image {
             opacity: 1;
         }
@@ -270,6 +266,7 @@ export default {
     align-items: flex-start;
     justify-content: center;
     max-width: 80%;
+    pointer-events: none;
     &.right{
         align-items: flex-end;
         right: 0;
@@ -281,6 +278,7 @@ export default {
     padding: 0 1rem;
     border-radius: 5px;
     box-shadow: 0 10px 30px -15px black;
+    pointer-events: auto;
   }
   }
 }
