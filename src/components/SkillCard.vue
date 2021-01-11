@@ -23,10 +23,10 @@ export default {
    margin: 40px 8px;
 }
 .skill-card-wrapper{
-    transform: rotate3d(1,1,0,0deg);
+    transform: rotateY(0deg);
     transition: transform 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
     &.spin{
-        transform: rotate3d(1,1,0,360deg);
+        transform: rotateY(360deg);
     }
     .text{
         color:black;
