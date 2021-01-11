@@ -106,7 +106,13 @@ export default {
                     entries.forEach(entry => {
                       if(entry.isIntersecting)
                       {
+                        
+                        //console.log(entry);
                         entry.target.classList.add("show");
+                        //entry.target.children[1].children[0].children[0].classList.add("spin");
+                        entry.target.children[1].children.forEach((child) => {
+                          child.children[0].classList.add("spin");
+                        })
                         itemObserver.unobserve(entry.target);
                       }
                     })
@@ -141,6 +147,7 @@ export default {
     margin: 0 auto;
     width: 100%;
     margin-bottom: 8px;
+    perspective: 600px;
 }
 
 .section-details-container{
@@ -358,6 +365,17 @@ export default {
   transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
   &.show{
     opacity: 1;
+  }
+}
+.bubble {
+  .skills-icons{
+    .outer-skill-card-wrapper{
+      .skill-card-wrapper{
+       
+          transform: rotate3d(0,1,0,45deg);
+        
+      }
+    }
   }
 }
 </style>
