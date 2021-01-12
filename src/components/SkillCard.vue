@@ -2,7 +2,7 @@
     <div class="outer-skill-card-wrapper">
     <div v-bind:class="textPos === 'up'? 'skill-card-wrapper up': 'skill-card-wrapper down'">
         <img v-bind:src="require(`@/${imgSrc}`)" v-bind:aria-label="imgLabel" v-bind:alt="imgLabel" v-bind:height="imgHeight" v-bind:class="imgClass" v-bind:width="imgWidth"/>
-        <p class="text">{{imgLabel}}</p>
+        <p class="skill-name-text">{{imgLabel}}</p>
     </div>
     </div>
 </template>
@@ -28,9 +28,14 @@ export default {
     &.spin{
         transform: rotateY(360deg);
     }
-    .text{
+    .skill-name-text{
         color:black;
         font-weight: bolder;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        &.show{
+            opacity: 1;
+        }
     }
     &.up{
        p{
@@ -44,7 +49,6 @@ export default {
         position: absolute;
         transform: translate3d(0px,-40px,0px);
         margin-top: 8px;
-        opacity: 0;
         &::before{
                     content: "";
                     position: absolute;
@@ -72,7 +76,6 @@ export default {
         transform: translate3d(0px,40px,0px);
         margin-bottom: 0;
         margin-top: 12px;
-        opacity: 0;
         &::before{
                content: "";
                 position: absolute;

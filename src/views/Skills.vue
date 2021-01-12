@@ -4,6 +4,16 @@
          <div class="horizontal-gradient-line-to-left"/>
         <h1 class="section-name-text-right">Skills</h1>
     </div>
+    <div class="show-skill">
+      <div class="show-skill-text">
+        <h4>Skill Name</h4>
+      </div>
+      <div class="show-skill-button">
+          <div class="circle">
+
+          </div>
+      </div>
+    </div>
     <div class="section-details-container tree">
             <div class="content">
               <img src="../assets/tree-hex.svg" alt="tree-hex" aria-label="tree-hex" width="25" height="25" class="tree-hex"/>
@@ -80,6 +90,14 @@ export default {
 
   mounted(){
     this.observeMethod();
+    const skillNameButton = document.querySelector(".show-skill-button");
+    const skillNames = document.querySelectorAll(".skill-name-text");
+    skillNameButton.addEventListener('click', ()=> {
+      skillNameButton.classList.toggle("toggle");
+      skillNames.forEach(skill => {
+        skill.classList.toggle("show");
+      })
+    })
   },
   components:{
         'skill-card' : SkillCard
@@ -87,10 +105,10 @@ export default {
   methods: {
     observeMethod: function(){
       let options = {
-  root: document.querySelector('main-app'),
-  rootMargin: '0px',
-  threshold: 0.1
-}
+          root: document.querySelector('main-app'),
+          rootMargin: '0px',
+          threshold: 0.1
+            }
  const subSection = document.querySelector(".skills-main-section");
         let observer = new IntersectionObserver((entry) => {
             if(entry[0].isIntersecting)
@@ -374,6 +392,38 @@ export default {
        
           transform: rotate3d(0,1,0,45deg);
         
+      }
+    }
+  }
+}
+.show-skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .show-skill-button{
+        width: 40px;
+        height: 20px;
+        background: rgba(64,64,64,0.6);
+        margin-left: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        transition: background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    .circle{
+        height: 14px;
+        width: 14px;
+        background-color: #cee8f5;
+        opacity: 1;
+        transform: translate3d(4px, 3px, 0px);
+        border-radius: 50px;
+        box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2), 0px 10px 14px 1px rgba(0,0,0,0.14), 0px 4px 18px 3px rgba(0,0,0,0.12);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+
+          }
+    &.toggle{
+       background: linear-gradient(90deg, #3e6ead 0%, #6ae4e6 100%);
+      .circle{
+        transform: translate3d(22px, 3px, 0px);
       }
     }
   }
