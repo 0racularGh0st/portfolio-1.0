@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="about-main-section">
     <div class="section-name">
-        <h1 class="section-name-text-left">About Me</h1>
+        <h1 class="section-name-text-left"><img src="../assets/about.svg" height="20" width="20" aria-label="about-icon" alt="about-icon" :style="{marginRight:'8px'}"/>About Me</h1>
         <div class="horizontal-gradient-line-to-right"/>
     </div>
     <div class="section-details-container">
@@ -21,10 +21,15 @@
 <script>
 import './sections.scss';
 import './css-styled-components.scss';
-
+import AboutIcon from '../assets/about.svg';
 export default {
   mounted(){
     this.observeMethod();
+  },
+  data(){
+    return{
+      aboutIcon: AboutIcon
+    }
   },
   methods: {
     observeMethod: function(){

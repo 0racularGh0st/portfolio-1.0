@@ -84,10 +84,14 @@ section{
 .section-name-text-left{
     margin-right: 0.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 .section-name-text-right{
     margin-left: 0.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 .section-details-heading{
     text-align: center;

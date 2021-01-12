@@ -1,7 +1,9 @@
 <template>
   <section id="projects" class="projects-main-section">
     <div class="section-name">
-      <h1 class="section-name-text-left">Projects</h1>
+      <h1 class="section-name-text-left">
+        <img src="../assets/projects.svg" height="20" width="20" aria-label="projects-icon" alt="projects-icon" :style="{marginRight:'8px'}"/>
+        Projects</h1>
       <div class="horizontal-gradient-line-to-right" />
     </div>
     <div class="section-details-container">

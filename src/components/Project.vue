@@ -1,6 +1,7 @@
 <template>
   <div :class="place==='left'?'main-project-container': 'main-project-container right'">
     <div :class="place==='left'?'project-name':'project-name right'">
+        <img src="../assets/projects.svg" height="15" width="15" aria-label="projects-icon" alt="projects-icon" :style="{marginRight:'8px',marginLeft:'8px'}"/>
         <h2>{{ config.name }}</h2>
         </div>
     <div :class="place==='left'?'project-content':'project-content right'">
@@ -155,12 +156,15 @@ export default {
   }
 }
 .project-name {
+     display: flex;
+    align-items: center;
       h2{
           font-weight: 900;
           color: white;
       }
       &.right{
           text-align: right;
+          flex-direction: row-reverse;
       }
   }
 .project-image {

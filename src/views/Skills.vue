@@ -2,7 +2,10 @@
   <section id="skills" class="skills-main-section">
     <div class="section-name right">
          <div class="horizontal-gradient-line-to-left"/>
-        <h1 class="section-name-text-right">Skills</h1>
+        <h1 class="section-name-text-right">
+          Skills
+          <img src="../assets/skills.svg" height="20" width="20" aria-label="skills-icon" alt="skills-icon" :style="{marginLeft:'8px'}"/>
+          </h1>
     </div>
     <div class="show-skill">
       <div class="show-skill-text">
