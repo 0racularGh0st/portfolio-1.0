@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- <div id="moon" class="moon-div">
+      <img :src="require(`@/assets/rsz_moon.${webpSupported?'webp':'jpg'}`)" height="165" width="165" alt="moon" aria-label="moon" class="moon-img"/>
+    </div> -->
     <div class="home">
       <section>
         <h1 class="content">
@@ -24,9 +27,22 @@
 </template>
 
 <script>
+// const moveMoon = () => {
+//   const moon = document.querySelector(".moon-img");
+//   window.addEventListener('scroll', ()=> {
+//     moon.style.transform = `translate3d(${(window.pageYOffset * 0.5)}px,0px,0px)`;
+//   })
+// }
 window.addEventListener("load", function () {
   setTimeout(startType, 3000);
 });
+// const Modernizer = window.Modernizr;
+// const isWebpSupported = () => {
+//   if(Modernizer.webp)
+//     return true;
+//   else
+//     return false;
+// }
 let index = 0;
 const mainText = "Hi, I'm Nigel. ";
 const texts = ["FullStack Developer.", "DevOps Engineer."];
@@ -97,8 +113,15 @@ const Projects = defineAsyncComponent(() =>
 );
 
 export default {
+  //  async created(){
+  //     this.webpSupported = await isWebpSupported();
+  //   },
+  //   mounted(){
+  //     moveMoon();
+  //   },
   data() {
     return {
+      //webpSupported: false,
       text: "Hi, I'm Nigel. FullStack Developer.",
       index: 0,
       letter: "",
