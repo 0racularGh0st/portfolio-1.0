@@ -24,9 +24,10 @@
                 <div class="section-details-heading-wrapper"><h4 class="section-details-heading">Languages I Speak</h4></div>
                 <div class="skills-icons">
                 <skill-card imgSrc="assets/javascript.png" imgLabel="Javascript" imgHeight="40" imgWidth="32.3" textPos="up"/>
-                <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40" imgWidth="40" textPos="down"/>
-                <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40" imgWidth="40" textPos="up"/>
-                <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40" imgWidth="40" textPos="down"/>
+                <skill-card imgSrc="assets/typescript.png" imgLabel="Typescript" imgHeight="40" imgWidth="40" textPos="down"/>
+                <skill-card imgSrc="assets/c.png" imgLabel="C" imgHeight="40" imgWidth="40" textPos="up"/>
+                <skill-card imgSrc="assets/c++.png" imgLabel="C++" imgHeight="40" imgWidth="40" textPos="down"/>
+                <skill-card imgSrc="assets/java.png" imgLabel="Java" imgHeight="40" imgWidth="40" textPos="up"/>
               </div>
               </div>
             </div>
@@ -38,6 +39,7 @@
                 <skill-card imgSrc="assets/vue.png" imgLabel="Vue" imgHeight="40" imgWidth="46.22" textPos="up"/>
                 <skill-card imgSrc="assets/electron.png" imgLabel="ElectronJS" imgHeight="40" imgWidth="36.88" textPos="down"/>
                 <skill-card imgSrc="assets/react.png" imgLabel="ReactJS" imgHeight="40" imgWidth="40" textPos="up"/>
+                <skill-card imgSrc="assets/gatsby.png" imgLabel="GatsbyJS" imgHeight="40" imgWidth="40" textPos="down"/>
             </div>  
             </div>
            </div>
@@ -77,6 +79,7 @@
             <div class="skills-icons">
                  <skill-card imgSrc="assets/mysql.png" imgLabel="MySql" imgHeight="40" imgWidth="40" textPos="up"/>
                  <skill-card imgSrc="assets/mongodb.png" imgLabel="MongoDB" imgHeight="40" imgWidth="40" textPos="down"/>
+                 <skill-card imgSrc="assets/dynamodb.png" imgLabel="DynamoDB" imgHeight="40" imgWidth="40" textPos="up"/> 
             </div>  
           </div>
        </div>

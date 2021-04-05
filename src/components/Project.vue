@@ -188,7 +188,7 @@ export default {
   }
   
   .project-desc {
-      color: white;
+      color: #c5c5c5;
       margin: 0 0.75rem;
     background: rgba(0, 0, 0, 0.65);
     padding: 0 1rem;
